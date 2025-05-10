@@ -1,0 +1,302 @@
+/* stylelint-disable */
+:root {
+    --headline-font: "Gotham SSm A", "Gotham SSm B", Arial, sans-serif;
+    --headline-font-weight-bold: 700;
+    --font: "Gotham SSm A", "Gotham SSm B", Arial, sans-serif;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --font-weight-black: 800;
+    --line-height: 1.2em;
+    --letter-spacing: 20;
+    --h1-spacing-bottom: 23px;
+    --base-font-size: 16px;
+    --h1-font-size: 28px;
+    --h2-font-size: 24px;
+    --h3-font-size: 21px;
+    --h4-font-size: 18px;
+    --h5-font-size: 18px;
+    --blockquote-font-size: 18px;
+    --text-font-size: 1em;
+    --button-font-size: 16px;
+    --button-medium-font-size: 12px;
+    --button-donate-font-size: 14px;
+    --button-circle-big-font-size: 18px;
+    --header-bar-font-size: 14px;
+    --nav-item-font-size: 1em;
+    --big-title: 5em;
+    --step-font-size: 26px;
+    --textstyles-h2: 1.4em;
+    --textstyles-h3: 1.25em;
+    --textstyles-h4: 1.14em;
+    --textstyles-h5: 1em;
+    --white: white;
+    --white-5: rgba(255, 255, 255, 0.05);
+    --white-10: rgba(255, 255, 255, 0.1);
+    --white-20: rgba(255, 255, 255, 0.2);
+    --white-30: rgba(255, 255, 255, 0.3);
+    --white-50: rgba(255, 255, 255, 0.5);
+    --white-75: rgba(255, 255, 255, 0.75);
+    --black: black;
+    --black-90: rgba(0, 0, 0, 0.9);
+    --black-50: rgba(0, 0, 0, 0.5);
+    --black-40: rgba(0, 0, 0, 0.4);
+    --black-30: rgba(0, 0, 0, 0.3);
+    --black-20: rgba(0, 0, 0, 0.2);
+    --black-15: rgba(0, 0, 0, 0.15);
+    --black-10: rgba(0, 0, 0, 0.1);
+    --black-5: rgba(0, 0, 0, 0.05);
+    --color-darker-gray: #333333;
+    --color-dark-gray: #323232;
+    --color-access-dark-bg: #222222;
+    --color-light-gray: #e8e8e8;
+    --color-dark-white: #f3f3f3;
+    --color-primary: var(--black);
+    --color-secondary: #39B54A;
+    --color-tertiary: var(--white);
+    --color-focus: #c5063b;
+    --box-shadow: 3px 0 25px 0 rgba(0, 0, 0, 0.16);
+    --text-color-light: #cecdcd;
+    --headline-color-light: #867f7d;
+    --color-accessibility-panel: var(--color-light-gray);
+    --color-panel-bg: #f1f1f1;
+    --color-menu-bg: #333333;
+    --color-menu-bg-hover: #111111;
+    --color-link: #0073aa;
+    --button-shadow: #719a74;
+    --button-focus-shadow: #33b3db;
+    --button-border: #80a583;
+    --lightgrey: #dddddd;
+    --header-bar-height: 50px;
+    --flag-size: 24px;
+    --logo-width: 123px;
+    --content-wrapper-inner: 100%;
+    --title-border: 5px;
+    --author-image-size: 90px;
+    --bg-bar-height: 200px;
+    --step-image-size: 210px;
+    --step-count-size: 70px;
+    --step-item-width: 295px;
+    --pagination-number-size: 44px;
+    --our-icon-width: 150px;
+    --our-icon-height: 150px;
+    --menu-col-with: 220px;
+    --fixed-header-logo-height: 23px;
+    --gap: 40px;
+    --nav-item-gap: 2.5em;
+    --spacing: 2.8em;
+    --content-wrapper: 20px;
+    --content-spacing: 40px;
+    --list-item-spacing: 1.4em;
+    --main-nav-item-spacing: 0 12px;
+    --section-padding: 40px 0;
+    --hero-text-padding: 30px 20px;
+    --header-bar-padding: 20px;
+    --content-wrapper-inner-padding: 20px;
+    --breadcrumb-spacing: 30px 0 30px 0;
+    --text-to-speech-spacing: 30px;
+    --entry-footer-spacing: 40px;
+    --item-featured-padding: 40px;
+    --section-spacing: 20px;
+    --step-count-position: -35px auto 17px;
+    --item-cta-padding: 40px;
+    --menu-item-arrow-spacing: 24px;
+    --primary-nav-padding: 18px 0;
+    --button-padding: 8px 20px;
+    --button-amount-padding: 8px 0;
+    --button-medium-padding: 0 20px;
+    --button-icon-spacing: 12px;
+    --button-medium-icon-spacing: 10px;
+    --button-bg-color: var(--color-primary);
+    --button-border-radius: 22px;
+    --button-line-height: 44px;
+    --button-medium-line-height: 30px;
+    --button-donate-line-height: 40px;
+    --button-donate-padding: 40px;
+    --button-circle-size: 40px;
+    --button-circle-medium-size: 44px;
+    --button-circle-big-size: 50px;
+    --button-circle-big-margin: 0 5px;
+    --default-transition: 0.5s ease;
+    --hover-transition: 0.3s ease;
+    /*
+      RESPONSIVE OVERRIDES
+    */
+  }
+  :root .night-mode {
+    --color-primary: var(--white);
+  }
+  @media (min-width: 768px) {
+    :root {
+      --h1-font-size: 48px;
+      --h2-font-size: 36px;
+      --h3-font-size: 28px;
+      --h4-font-size: 24px;
+      --h5-font-size: 21px;
+      --blockquote-font-size: 21px;
+      --button-donate-font-size: 16px;
+      --logo-width: 155px;
+      --title-border: 7px;
+      --author-image-size: 144px;
+      --bg-bar-height: 350px;
+      --step-item-width: 448px;
+      --our-icon-width: 200px;
+      --our-icon-height: 200px;
+      --fixed-header-logo-height: 35px;
+      --hero-text-padding: 60px 40px;
+      --content-wrapper: 40px;
+      --breadcrumb-spacing: 60px 0 24px 0;
+      --text-to-speech-spacing: 40px;
+      --content-wrapper-inner-padding: 20px;
+      --item-featured-padding: 60px;
+      --section-padding: 60px 0;
+      --item-cta-padding: 40px;
+      --button-padding: 10px 25px;
+      --button-amount-padding: 10px 0;
+      --button-donate-padding: 50px;
+      --button-circle-big-margin: 0 10px;
+    }
+  }
+  @media (min-width: 1024px) {
+    :root {
+      --content-wrapper-inner: 990px;
+      --entry-footer-spacing: 60px;
+      --hero-text-padding: 50px 50px 0;
+      --item-featured-padding: 100px;
+      --section-spacing: 40px;
+      --content-spacing: 60px;
+    }
+  }
+  @media (min-width: 1366px) {
+    :root {
+      --h3-font-size: 32px;
+      --button-circle-big-font-size: 25px;
+      --logo-width: 155px;
+      --step-item-width: 310px;
+      --menu-col-with: 280px;
+      --main-nav-item-spacing: 0 17px;
+      --section-spacing: 60px;
+      --primary-nav-padding: 20px 0;
+      --button-circle-big-size: 70px;
+    }
+  }
+  @media (min-width: 1920px) {
+    :root {
+      --h1-spacing-bottom: 43px;
+      --base-font-size: 18px;
+      --h1-font-size: 60px;
+      --h2-font-size: 48px;
+      --h3-font-size: 36px;
+      --h4-font-size: 28px;
+      --h5-font-size: 24px;
+      --blockquote-font-size: 24px;
+      --button-medium-font-size: 16px;
+      --button-font-size: 18px;
+      --button-donate-font-size: 21px;
+      --header-bar-font-size: 16px;
+      --step-font-size: 48px;
+      --logo-width: 210px;
+      --flag-size: 30px;
+      --content-wrapper-inner: 1400px;
+      --title-border: 10px;
+      --author-image-size: 180px;
+      --bg-bar-height: 500px;
+      --step-image-size: 300px;
+      --step-count-size: 100px;
+      --step-item-width: 340px;
+      --pagination-number-size: 60px;
+      --menu-col-with: 360px;
+      --fixed-header-logo-height: 50px;
+      --main-nav-item-spacing: 0 25px;
+      --hero-text-padding: 50px 70px 0;
+      --content-wrapper: 50px;
+      --header-bar-padding: 30px;
+      --content-wrapper-inner-padding: 40px;
+      --breadcrumb-spacing: 120px 0 42px 0;
+      --text-to-speech-spacing: 80px;
+      --entry-footer-spacing: 80px;
+      --item-featured-padding: 120px;
+      --section-spacing: 80px;
+      --section-padding: 80px 0;
+      --step-count-position: -50px auto 35px;
+      --content-spacing: 80px;
+      --item-cta-padding: 60px;
+      --menu-item-arrow-spacing: 29px;
+      --primary-nav-padding: 36.5px 0;
+      --button-padding: 16.5px 40px;
+      --button-amount-padding: 16.5px 0;
+      --button-medium-padding: 0 26px;
+      --button-icon-spacing: 20px;
+      --button-medium-icon-spacing: 12px;
+      --button-line-height: 60px;
+      --button-medium-line-height: 40px;
+      --button-donate-line-height: 60px;
+      --button-donate-padding: 75px;
+      --button-circle-medium-size: 60px;
+      --button-circle-big-size: 80px;
+      --button-border-radius: 30px;
+    }
+  }
+  
+  .contact-box {
+    background-color: var(--black-5);
+    padding: 40px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 80px;
+  }
+  @media (min-width: 768px) {
+    .contact-box {
+      flex-direction: row;
+    }
+  }
+  
+  .contact-box-image {
+    width: 150px;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  @media (min-width: 768px) {
+    .contact-box-image {
+      margin-bottom: 0;
+      flex: 0 0 180px;
+      margin-right: 60px;
+    }
+  }
+  .contact-box-image .entry-author-image {
+    margin-bottom: 0;
+  }
+  
+  .contact-box-infos a {
+    text-decoration: underline;
+    -webkit-text-decoration-color: var(--color-secondary);
+            text-decoration-color: var(--color-secondary);
+    text-decoration-thickness: 2px;
+    transition: var(--hover-transition);
+    word-break: break-all;
+  }
+  .contact-box-infos a:after {
+    height: 0;
+  }
+  .contact-box-infos a:hover {
+    -webkit-text-decoration-color: var(--black);
+            text-decoration-color: var(--black);
+  }
+  .contact-box-infos p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .contact-box-infos-phone,
+  .contact-box-infos-mail {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 45px;
+  }
+  .contact-box-infos-phone .fa,
+  .contact-box-infos-mail .fa {
+    position: absolute;
+    top: 2px;
+    left: 0;
+  }

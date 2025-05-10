@@ -1,0 +1,60 @@
+import { Link } from "react-router-dom";
+
+const Mission = () => {
+  return (
+    <>
+      <section className="single-teaser">
+        <div className="single-teaser-bg" />
+        <div className="content-wrapper">
+          <div className="single-teaser-inner content-wrapper-inner">
+            <div className="single-teaser-image focus-point-image">
+              <Link to="/our-work">
+                <figure className="image image-1404">
+                  <img
+                    decoding="async"
+                    loading="lazy"
+                    style={{ objectPosition: "50% 50%" }}
+                    width={1024}
+                    height={683}
+                    src="https://i.pinimg.com/736x/76/07/ec/7607ec91cd29eb3f0c08453912fa72a9.jpg"
+                    srcSet="
+                      https://i.pinimg.com/736x/76/07/ec/7607ec91cd29eb3f0c08453912fa72a9.jpg 2048w,
+                      https://i.pinimg.com/736x/76/07/ec/7607ec91cd29eb3f0c08453912fa72a9.jpg  1440w,
+                       https://i.pinimg.com/736x/76/07/ec/7607ec91cd29eb3f0c08453912fa72a9.jpg   960w
+                      "
+                    alt="Inclusive education support"
+                  />
+                
+                </figure>
+              </Link>
+            </div>
+            <div className="single-teaser-content">
+              <h2 className="h1 hl-underline single-teaser-content-hl">
+                <Link to="/our-work">
+                  Our mission &amp; vision
+                </Link>
+              </h2>
+              <div className="single-teaser-text">
+                <p>
+                  <strong />
+                </p>
+                <p>
+                  A Nigeria where every child has access to
+quality education, breaking the cycle of
+poverty and creating a generation of empowered leaders
+                </p>
+                <Link
+                  to="/about-us"
+                  className="cta-button"
+                >
+                  Learn more
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+export default Mission;
