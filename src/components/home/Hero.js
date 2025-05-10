@@ -16,22 +16,20 @@ import Image2 from "../../assets/images/group-african-kids-learning-together.jpg
 import Image3 from "../../assets/images/group-african-kids-paying-attention-class.jpg";
 import Image4 from "../../assets/images/woman-teaching-kids-class.jpg";
 
-
-
 const Hero = (props) => {
   const news = props.data;
 
   const newsImages = [
     {
-      image:Image1
+      image: Image1,
     },
-    {image:Image2},
+    { image: Image2 },
     {
-      image:Image3
+      image: Image3,
     },
-   
-    {image:Image4}
-  ]
+
+    { image: Image4 },
+  ];
 
   return (
     <>
@@ -73,7 +71,10 @@ const Hero = (props) => {
                   </Link>
                 </div> */}
 
-                <div className="hero-image focus-point-image" style={{width:"100%",height:"100%"}}>
+                <div
+                  className="hero-image focus-point-image"
+                  style={{ width: "100%", height: "410px" }}
+                >
                   <Link to="/news">
                     <figure className="image image-8455">
                       <img
@@ -85,7 +86,7 @@ const Hero = (props) => {
                           objectFit: "cover",
                         }}
                         width={2048}
-                        height={1210}
+                        height={500}
                         src={e?.image}
                         srcSet={`
                           ${e?.image} 2048w,
