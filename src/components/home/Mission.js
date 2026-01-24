@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import MissionImg from "../../assets/images/mission2.jpg"
 const Mission = () => {
   return (
     <>
@@ -16,12 +16,12 @@ const Mission = () => {
                     style={{ objectPosition: "50% 50%" }}
                     width={1024}
                     height={683}
-                    src="https://i.pinimg.com/736x/76/07/ec/7607ec91cd29eb3f0c08453912fa72a9.jpg"
-                    srcSet="
-                      https://i.pinimg.com/736x/76/07/ec/7607ec91cd29eb3f0c08453912fa72a9.jpg 2048w,
-                      https://i.pinimg.com/736x/76/07/ec/7607ec91cd29eb3f0c08453912fa72a9.jpg  1440w,
-                       https://i.pinimg.com/736x/76/07/ec/7607ec91cd29eb3f0c08453912fa72a9.jpg   960w
-                      "
+                    src={MissionImg}
+                    srcSet={`
+                     ${MissionImg} 2048w,
+                       ${MissionImg}  1440w,
+                       ${MissionImg}   960w
+                      `}
                     alt="Inclusive education support"
                   />
                 

@@ -18,7 +18,7 @@ const Index = () => {
 
   const fetchNews = async () => {
     try {
-      const res = await axios.get(`${API_URI}/news/all?limit=4`)
+      const res = await axios.get(`${API_URI}/news/all?limit=10`)
       const data = res.data.data.reverse();
       setNews(data)
       setLoading(false)
@@ -39,7 +39,7 @@ const Index = () => {
         <Borlabs/>
         <Hero data={news} />
         <Mission />
-        <RecentNews data={news.slice(0, 6)} />
+        <RecentNews data={news.slice(0,6)} />
         <Approach />
         <Counter />
         <Newsletter />

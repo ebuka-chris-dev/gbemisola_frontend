@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import MainLogo from "../../assets/images/logoasset.svg";
 import MobileNav from "./MobileNav";
 import { useEffect, useState } from "react";
@@ -6,11 +6,14 @@ import axios from "axios";
 import { API_URI } from "../../store/constant";
 
 const Header = () => {
-  const [showNav,setShowNav] = useState(false);
+  const [showNav, setShowNav] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [media, setMedia] = useState([])
-  
 
+  const location = useLocation();
+  const url = location.pathname;
+
+  console.log(url)
   const fetchMedia = async () => {
     try {
       const res = await axios.get(`${API_URI}/media/all?limit=4`)
@@ -25,13 +28,13 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
-  useEffect(()=>{
+  useEffect(() => {
     fetchMedia();
-  },[])
+  }, [])
 
   return (
     <>
-   {showNav &&  <MobileNav setShowNav={setShowNav}/>}
+      {showNav && <MobileNav setShowNav={setShowNav} />}
       <div className="main-header">
         <Link className="logo" to="/" title="go to Homepage">
           <img src={MainLogo} style={{ color: "black" }} alt="logo" />
@@ -44,44 +47,43 @@ const Header = () => {
                 className={`
                 menu-item menu-item-type-post_type menu-item-object-page
                  current-menu-item page_item page-item-876 current_page_item menu-item-has-children menu-item-909 no-flex
-                 ${
-                  isOpen ? 'open' : ''
-                } 
+                 ${isOpen ? 'open' : ''
+                  } 
                 `}
               >
                 <Link to="#" onClick={toggleDropdown}>
                   <span>About Us
-                  <span className={`dropdown-arrow ${isOpen ? 'open' : ''}`}>▼</span>
+                    <span className={`dropdown-arrow ${isOpen ? 'open' : ''}`}>▼</span>
 
                   </span>
                 </Link>
-               
+
                 <ul className="sub-menu">
-                    <li
-                      id="menu-item-914"
-                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-914"
-                    >
-                      <Link
-                        to="/about-us"
-                        ><span>About Us</span></Link>
-                    </li>
-                    <li
-                      id="menu-item-1626"
-                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1626"
-                    >
-                      <Link
-                        to="/our-founder-organisation"
-                        ><span>Our Organisation</span></Link >
-                    </li>
-                    <li
-                      id="menu-item-915"
-                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-915"
-                    >
-                      <Link
-                        to="/founder-message"
-                        ><span>Founder Message</span></Link                      >
-                    </li>
-                  </ul>
+                  <li
+                    id="menu-item-914"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-914"
+                  >
+                    <Link
+                      to="/about-us"
+                    ><span>About Us</span></Link>
+                  </li>
+                  <li
+                    id="menu-item-1626"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1626"
+                  >
+                    <Link
+                      to="/our-founder-organisation"
+                    ><span>Our Organisation</span></Link >
+                  </li>
+                  <li
+                    id="menu-item-915"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-915"
+                  >
+                    <Link
+                      to="/founder-message"
+                    ><span>Founder Message</span></Link                      >
+                  </li>
+                </ul>
               </li>
 
               <li
@@ -99,7 +101,7 @@ const Header = () => {
                 <Link to="/news">
                   <span>News</span>
                 </Link>
-              
+
               </li>
               {media.length >= 1 && <li
                 id="menu-item-911"
@@ -109,9 +111,9 @@ const Header = () => {
                   <span>Media</span>
                 </Link>
               </li>
-              
+
               }
-             
+
               <li
                 id="menu-item-913"
                 className="menu-item menu-item-type-post_type menu-item-object-page menu-item-913"
@@ -134,7 +136,7 @@ const Header = () => {
         {/* <Link to="#" className="search toggle-search">
           <i className="fa fa-search" />
         </Link> */}
-        <Link to="#" className="cta-button cta-button-donate animated">
+        {url !== '/donations' ?  <Link to="/donations" className="cta-button cta-button-donate animated">
           Donate
           <svg
             className="icon_heart"
@@ -156,13 +158,37 @@ const Header = () => {
       c14.9-9.19333,20-18.215,20-25C40-1.69061,23.33333-3.16561,20,5.89272z"
             />
           </svg>
-        </Link>
+        </Link>: <a href="https://paystack.shop/pay/c3tryqx072" target="_blank" className="cta-button cta-button-donate animated">
+          Donate
+          <svg
+            className="icon_heart"
+            version="1.2"
+            baseProfile="tiny"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 40 37"
+            overflow="visible"
+            xmlSpace="preserve"
+          >
+            <path
+              id="Trazado_230_32_"
+              fill="#39B54A"
+              d="M20,5.89272C16.685-3.10561,0-1.76894,0,11.83439c0,6.78,5.1,15.80167,20,25
+      c14.9-9.19333,20-18.215,20-25C40-1.69061,23.33333-3.16561,20,5.89272z"
+            />
+          </svg>
+        </a> }
+       
         <Link
           to="#"
           className="burger-menu toggle-menu hc-nav-trigger hc-nav-1 toggle-open"
           aria-label="Main menu"
           role="button"
-          onClick={()=>setShowNav(true)}
+          style={{float:"right"}}
+          onClick={() => setShowNav(true)}
         >
           <span className="sr-only">Show Navigation</span>
           <svg

@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import APP1 from "../../assets/images/mission.jpg";
+import APP2 from "../../assets/images/app2.jpg";
+import APP3 from "../../assets/images/app3.jpg";
 
 const Approach = () => {
   return (
@@ -19,12 +22,12 @@ const Approach = () => {
                           style={{ objectPosition: "50% 50%" }}
                           width={1024}
                           height={683}
-                          src="https://img.freepik.com/premium-photo/boy-denim-jacket-black-history-month_564714-15423.jpg?ga=GA1.1.709059001.1745352288&semt=ais_hybrid&w=740"
-                          srcSet="
-                              https://img.freepik.com/premium-photo/boy-denim-jacket-black-history-month_564714-15423.jpg?ga=GA1.1.709059001.1745352288&semt=ais_hybrid&w=740 2048w,
-                              https://img.freepik.com/premium-photo/boy-denim-jacket-black-history-month_564714-15423.jpg?ga=GA1.1.709059001.1745352288&semt=ais_hybrid&w=740  1440w,
-                              https://img.freepik.com/premium-photo/boy-denim-jacket-black-history-month_564714-15423.jpg?ga=GA1.1.709059001.1745352288&semt=ais_hybrid&w=740  960w
-                            "
+                          src={`${APP2}?ga=GA1.1.709059001.1745352288&semt=ais_hybrid&w=740`}
+                          srcSet={`
+                             ${APP2}?ga=GA1.1.709059001.1745352288&semt=ais_hybrid&w=740 2048w,
+                              ${APP2}?ga=GA1.1.709059001.1745352288&semt=ais_hybrid&w=740  1440w,
+                              ${APP2}?ga=GA1.1.709059001.1745352288&semt=ais_hybrid&w=740  960w
+                            `}
                           alt="A young man with a protective mask and apron stands in front of a red coffee machine and prepares fresh coffee."
                         />
                         
@@ -65,12 +68,12 @@ const Approach = () => {
                           style={{ objectPosition: "50% 50%" }}
                           width={2048}
                           height={1366}
-                          src="https://www.licht-fuer-die-welt.at/app/uploads/sites/8/2021/10/gk190218_lftw_hoima_d01-07316-150x150.jpg"
-                          srcSet="
-                              https://www.licht-fuer-die-welt.at/app/uploads/sites/8/2021/10/gk190218_lftw_hoima_d01-07316-2048x1366.jpg 2048w,
-                              https://www.licht-fuer-die-welt.at/app/uploads/sites/8/2021/10/gk190218_lftw_hoima_d01-07316-1440x960.jpg  1440w,
-                              https://www.licht-fuer-die-welt.at/app/uploads/sites/8/2021/10/gk190218_lftw_hoima_d01-07316-960x640.jpg    960w
-                            "
+                          src={`${APP3}`}
+                          srcSet={`
+                             ${APP3} 2048w,
+                              ${APP3}  1440w,
+                              ${APP3}   960w
+                            `}
                           alt="In der ersten Reihe auf einer Holzschulbank sitzen sieben Jugendliche mit Brillen. Sie alle tragen ein blaues Hemd und blicken in die Kamera."
                         />
                         <figcaption className="sr-only">
@@ -112,12 +115,12 @@ const Approach = () => {
                           style={{ objectPosition: "50% 50%" }}
                           width={1024}
                           height={682}
-                          src="https://i.pinimg.com/736x/4e/aa/62/4eaa622fc8424d8f41e8004ac34083fa.jpg"
-                          srcSet="
-                              https://i.pinimg.com/736x/4e/aa/62/4eaa622fc8424d8f41e8004ac34083fa.jpg 2048w,
-                              https://i.pinimg.com/736x/4e/aa/62/4eaa622fc8424d8f41e8004ac34083fa.jpg  1440w,
-                              https://i.pinimg.com/736x/4e/aa/62/4eaa622fc8424d8f41e8004ac34083fa.jpg   960w
-                            "
+                          src={`${APP1}`}
+                          srcSet={`
+                             ${APP1} 2048w,
+                              ${APP1}  1440w,
+                             ${APP1}  960w
+                            `}
                           alt="Education"
                         />
                        

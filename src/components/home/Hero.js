@@ -11,10 +11,10 @@ import "swiper/css/navigation";
 
 // Swiper modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import Image1 from "../../assets/images/boy-holding-white-paper-school.jpg";
-import Image2 from "../../assets/images/group-african-kids-learning-together.jpg";
-import Image3 from "../../assets/images/group-african-kids-paying-attention-class.jpg";
-import Image4 from "../../assets/images/woman-teaching-kids-class.jpg";
+import Image1 from "../../assets/images/ba1.jpg";
+import Image2 from "../../assets/images/ba2.jpg";
+import Image3 from "../../assets/images/ba3.jpg";
+import Image4 from "../../assets/images/ba1.jpg";
 
 const Hero = (props) => {
   const news = props.data;
@@ -73,7 +73,7 @@ const Hero = (props) => {
 
                 <div
                   className="hero-image focus-point-image"
-                  style={{ width: "100%", height: "410px" }}
+                  // style={{ width: "100%", height: "250px" }}
                 >
                   <Link to="/news">
                     <figure className="image image-8455">

@@ -28,6 +28,7 @@ import Partnership from './pages/partnership/Partnership';
 import Message from './pages/message/Message';
 import ViewNews from './pages/view-news/ViewNews';
 import ContactUs from './pages/contact-us/ContactUs';
+import Donation from './pages/donation/Donation';
 
 
 
@@ -50,6 +51,8 @@ function App() {
    <Route path="/news/media" element={<Media />} />
    <Route path="/work-with-us" element={<WorkWithUs />} />
    <Route path="/donation-information" element={<DonationInfo />} />
+   <Route path="/donations" element={<Donation />} />
+
    <Route path="/partnerships" element={<Partnership />} />
 
 

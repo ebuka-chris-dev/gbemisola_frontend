@@ -64,7 +64,7 @@ const Index = () => {
                 </ul>
               </div>
               <section id="readSpeakerSection">
-                <section className="contact-box">
+                {/* <section className="contact-box">
                   <div className="contact-box-image">
                     <div >
                       <figure className="image image-3901">
@@ -84,18 +84,17 @@ const Index = () => {
                   <div className="contact-box-infos">
                     <h5>Gbemisola Yussuf</h5>
                     <p style={{marginBottom:".5em"}}>Founder of Gbemisola Yussuff Foundation</p>
-                    {/* className="contact-box-infos-mail" */}
                     <p>
                     <i class="fa-regular fa-envelope"></i> <a href="mailto:gbemisolayussufffoundation@gmail.com">
                       gbemisolayussufffoundation@gmail.com
                       </a>
                     </p>
                   </div>
-                </section>
+                </section> */}
                 <section className="paragraph">
                   <div className="paragraph__container">
                     <p>
-                      Gbemisola Yussuff is a passionate advocate for education
+                      Aisha Gbemisola Yussuff is a passionate advocate for education
                       and youth empowerment. Born in Nigeria, Gbemisola left the
                       country at the age of 5 and grew up abroad, where she
                       pursued her education and developed a deep understanding

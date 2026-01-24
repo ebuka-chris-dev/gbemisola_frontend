@@ -72,7 +72,7 @@ const Index = () => {
                     </div>
                   </div>
                   <div className="contact-box-infos">
-                    <h5>Gbemisola Yussuf</h5>
+                    <h5>Aisha Gbemisola Yussuf</h5>
                     <p style={{ marginBottom: ".5em" }}>
                       Founder of Gbemisola Yussuff Foundation
                     </p>
@@ -135,7 +135,7 @@ const Index = () => {
                     </p>
                     <p>With gratitude and hope,</p>
                     <p>
-                      Gbemisola Yussuff <br />
+                     Aisha Gbemisola Yussuff <br />
                       Founder, Gbemisola Yussuff Foundation
                     </p>
                   </div>

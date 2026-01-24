@@ -57,7 +57,7 @@ const Index = () => {
                     <div className="teasers-item-content">
                       <div className="teasers-image-wrap">
                         <div className="teasers-image focus-point-image">
-                          <a href="#">
+                          <a href="https://paystack.shop/pay/c3tryqx072" target="_blank">
                             <figure className="image image-194">
                               <img
                                 decoding="async"
