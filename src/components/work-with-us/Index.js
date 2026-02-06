@@ -6,8 +6,8 @@ const Index = () => {
     <>
       <article className="post-863 page type-page status-publish hentry">
         <header>
-          <div className="page-image focus-point-image focus-point-image-bg">
-            <h1 className="hl-underline hl-underline-centered">Donations</h1>
+          <div className="page-image focus-point-image focus-point-image-bg item-title">
+            <h1 className="hl-underline hl-underline-centered">Work With Us</h1>
             <figure className="image image-866 bg-image">
               <img
                 loading="lazy"

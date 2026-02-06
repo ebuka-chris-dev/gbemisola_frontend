@@ -267,7 +267,7 @@
 }
 
 @media (min-width: 1024px) {
-  .hero-image.focus-point-image {
+ .hero-image.focus-point-image {
     height: 500px;
   }
 }
@@ -278,9 +278,6 @@
   .hero-image.focus-point-image a {
     padding-top: 61.0465116279%;
   }
-   /* .hero-image.focus-point-image {
-    height: 250px;
-  } */
 }
 @media (min-width: 768px) {
   .hero-image.focus-point-image a {

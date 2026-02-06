@@ -1,11 +1,11 @@
-import Index from "../../components/our-work/Capacity-Building-For-Teachers/Index";
+import Index from "../../components/our-work/smart-learning-hub/Index";
 import { Borlabs } from "../../components/shared/Borlabs";
 import Footer from "../../components/shared/Footer";
 import Headers from "../../components/shared/Header";
 import Newsletter from "../../components/shared/Newsletter";
 import SocialMedia from "../../components/shared/SocialMedia";
 
-const OurWork = () => {
+const SmartLearningHub = () => {
 
     return (
         <>
@@ -21,4 +21,4 @@ const OurWork = () => {
         </>
     )
 }
-export default OurWork;
+export default SmartLearningHub;

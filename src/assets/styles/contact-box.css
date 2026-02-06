@@ -242,7 +242,7 @@
     background-color: var(--black-5);
     padding: 40px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     justify-content: flex-start;
     margin-bottom: 80px;

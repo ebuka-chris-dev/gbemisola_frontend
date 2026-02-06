@@ -29,19 +29,19 @@ const Index = () => {
           <div className="entry-wrap">
             <div className="entry-content  pull-up ">
               <header>
-                <div className="breadcrumb">
-                  <span typeof="v:Breadcrumb">
+                {/* <div className="breadcrumb"> */}
+                  {/* <span typeof="v:Breadcrumb">
                     <a rel="v:url" property="v:title" href>
                       About Us
                     </a>
-                  </span>{" "}
-                  <span className="delimiter">/</span>{" "}
-                  {/* <span className="current">Founder Message</span> */}
-                </div>
+                  </span>{" "} */}
+                  {/* <span className="delimiter">/</span>{" "}
+                  <span className="current">Founder Message</span>
+                </div> */}
                 {/* .breadcrumbs */}
-                <div className="item-title">
-                  <h3 className="entry-title">About Us - Gbemisola Yussuff Foundation </h3>
-                </div>
+                {/* <div className="item-title">
+                  <h3 className="entry-title">Aboaut Us - Gbemisola Yussuff Foundation </h3>
+                </div> */}
                 <span className="item-date" />
               </header>
               <div className="subnav-mobile">
@@ -88,34 +88,39 @@ const Index = () => {
                     <p>
                       <strong>
                         Who We Are
-                      </strong>  <br />
+                      </strong>  <br /> <br />
                       The Gbemisola Yussuff Foundation (GYF) is a nonprofit organisation dedicated to empowering underserved children in  Nigeria through education, literacy, and digital skills development. Founded by Gbemisola Yussuff, who grew up and studied in the UK before returning to Nigeria, the foundation is committed to bridging the educational gap and ensuring every child has the opportunity to succeed.
 
                     </p>
+                    <br />
                     <p>
                       <strong>
                         Why Our Work Matters
                       </strong>
-                      <br />
+                      <br /><br />
                       Nigeria has the highest number of out-of-school children in the world, with an estimated 20 million children lacking access to education. The northern region is the most affected, particularly in states like Borno, Yobe, and Adamawa, where conflicts and socio-economic challenges have severely impacted education. Girls are disproportionately affected, with millions unable to attend school due to poverty, early marriage, and cultural barriers.
                     </p>
+                    <br />
                     <p>
                       <strong>
                         Our Mission
                       </strong>
-                      <br />
+                      <br /><br />
                       Our mission is to equip children with the knowledge and skills they need for a brighter future by providing access to quality books, digital learning resources, and ICT training in schools and communities.
 
                     </p>
+                    <br />
                     <p>
                       <strong>
                         Our Vision
                       </strong>
-                      <br />
+                      <br /><br />
                       We envision a world where every child, regardless of background, has access to quality education and technology, enabling them to unlock their full potential and contribute to society
 
                     </p>
+                    <br />
                     <strong className="wp-block-heading">Our Key Initiatives:</strong>
+                    <br /><br />
                     <ul className="wp-block-list">
                       <li>
                         Read to Lead Campaign – Promoting literacy through school libraries, book donations, storytelling sessions, and reading competitions.
@@ -127,18 +132,20 @@ const Index = () => {
                         Educational Outreach – Supporting schools, training teachers, and mentoring students in underserved communities.
                       </li>
                     </ul>
+                    <br />
                     <p>
                       <strong>
                         How We Work
                       </strong>
-                      <br />
+                      <br /><br />
                       We collaborate with government agencies, corporate partners, and international organisations to ensure sustainable educational programs that make a real impact in the lives of children.
                     </p>
+                    <br />
                     <p>
                       <strong>
                         Join Us
                       </strong>
-                      <br />
+                      <br /><br />
                       Together, we can build a future where every child has the tools to learn, grow, and succeed. Support our mission by donating, volunteering, or partnering with us to create lasting change.
                     </p>
                   </div>

@@ -39,7 +39,7 @@ const NewsList = (props) => {
               </span>
               <Link to={`/news/${e._id}`}>
                 <div className="item-title">
-                  <h3>{e.title}</h3>
+                  <h3 style={{fontWeight:800}}>{e.title}</h3>
                 </div>
               </Link>
             </div>

@@ -117,7 +117,7 @@ const Index = () => {
                             <option>Select Amount</option>
                             {options.map(({ amount, link }) => (
                               <option key={amount} value={link}>
-                                {amount.toLocaleString()} ₦
+                                ₦ {amount.toLocaleString()} 
                               </option>
                             ))}
                           </select>

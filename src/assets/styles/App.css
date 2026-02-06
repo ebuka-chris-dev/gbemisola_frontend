@@ -20,10 +20,17 @@ dl,
 dd {
   margin: 0;
 }
-body {
+/* body {
   font-family: "Montserrat", serif;
   font-optical-sizing: auto;
   font-weight: 600;
+  font-style: normal;
+} */
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
   font-style: normal;
 }
 ul[role="list"],
@@ -622,11 +629,11 @@ blockquote cite {
   left: -30px;
   top: 10px;
 }
-.paragraph{
-  text-align: justify;
+.paragraph p{
+  text-align: left;
   hyphens: auto; 
   word-spacing: 2px;
-  line-height: 1.5; 
+  line-height: 2; 
   margin: 5px 0;
 }
 .entry-content ol {
@@ -3726,9 +3733,12 @@ article.pressreleases .item-date {
   display: inline-block;
 }
 .entry-subnav > li > a {
-  font-weight: var(--font-weight-black);
+  /* font-weight: var(--font-weight-black); */
   margin-bottom: 15px;
 }
+.entry-subnav  li :hover a{
+  text-decoration: underline;
+} 
 @media (min-width: 1920px) {
   .entry-subnav > li > a {
     margin-bottom: 20px;
@@ -4906,7 +4916,7 @@ body.hc-nav-open {
   color: #000;
 }
 .hc-offcanvas-nav li.nav-parent .nav-item-link:last-child {
-  padding-right: 58px;
+  /* padding-right: 58px; */
 }
 .hc-offcanvas-nav li.nav-parent .nav-item-link:not(:last-child) {
   margin-right: 24px;

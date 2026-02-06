@@ -18,7 +18,7 @@ const Index = () => {
       const res = await axios.get(
         `${API_URI}/news/all?page=${pageNumber}&limit=${limit}`
       );
-      const data = res.data.data.reverse();
+      const data = res.data.data;
 
       setNews(data);
       setTotalPages(res.data.totalPages || 1);
@@ -73,15 +73,15 @@ const Index = () => {
 
       <div className="item-featured">
         <div className="item-featured-bg focus-point-image focus-point-image-bg">
-          <Link to={news[news.length - 1]?._id}>
+          <Link to={news[0]?._id}>
             <figure className="image image-284 bg-image">
               <img
                 loading="lazy"
                 style={{ objectPosition: "51.76% 65.15%" }}
                 width={1024}
                 height={683}
-                src={news[news.length - 1]?.image}
-                alt={news[news.length - 1]?.title}
+                src={news[2]?.image}
+                alt={news[2]?.title}
               />
             </figure>
           </Link>
@@ -89,23 +89,24 @@ const Index = () => {
         <div className="item-featured-inner content-wrapper-inner">
           <div className="item-featured-content">
             <div className="item-featured-text">
-              <ul className="item-categories tag-nav">
-                {news[news.length - 1]?.tags?.map((e, i) => (
+              <ul className="item-categories tag-nav tag-nav-white">
+                {news[2]?.tags?.map((e, i) => (
                   <li key={i}>
                     <span className="tag-badge">{e.label}</span>
                   </li>
                 ))}
               </ul>
-              <Link to={`/news/${news[news.length - 1]?._id}`}>
+              <Link to={`/news/${news[2]?._id}`}>
                 <div className="item-title">
-                  <h2 style={{ textTransform: "capitalize" }}>
-                    {news[news.length - 1]?.title}
+                  <h2 style={{ textTransform: "capitalize",fontWeight:"800" }}>
+                    {news[2]?.title}
                   </h2>
                 </div>
               </Link>
+              <br/>
               <Link
-                className="cta-button"
-                to={`/news/${news[news.length - 1]?._id}`}
+                className="cta-button " id="news-btn"
+                to={`/news/${news[2]?._id}`}
               >
                 Read the story
               </Link>
@@ -114,8 +115,8 @@ const Index = () => {
         </div>
       </div>
 
-      <article className="archive-wrap" style={{ marginBottom: "1rem" }}>
-        <h1 className="archive-title hl-underline hl-underline-centered">
+      <article className="archive-wrap news-header" style={{ marginBottom: "1rem" }}>
+        <h1 className="archive-title hl-underline hl-underline-centered" style={{fontWeight:"800"}}>
           News
         </h1>
         <div className="archive-grid content-wrapper-inner">

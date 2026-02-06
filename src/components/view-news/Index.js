@@ -42,7 +42,7 @@ const Index = () => {
             </div>
             {/* .breadcrumbs */}
             <div className="item-title">
-              <h1 className="entry-title">{news?.title}</h1>
+              <h1 className="entry-title" style={{fontWeight:"800"}}>{news?.title}</h1>
             </div>
             <span className="item-date">
               {new Date(news?.createdAt).toDateString()}

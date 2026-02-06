@@ -1,7 +1,8 @@
-import $ from "jquery";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Swiper from "swiper";
+import { Navigation } from "swiper/modules";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import BGIMAGE from "../../assets/images/p8.jpg";
@@ -9,36 +10,31 @@ import BGIMAGE from "../../assets/images/p8.jpg";
 const RecentNews = (props) => {
   const news = props.data;
 
-  useEffect(() => {
-    setTimeout(() => {
-      const swiperContainer = document.querySelector(".recent-news-slider");
-      const nextBtn = document.querySelector(".recent-news-slider-next");
-      const prevBtn = document.querySelector(".recent-news-slider-prev");
+ useEffect(() => {
+  const swiperContainer = document.querySelector(".recent-news-slider");
+  const nextBtn = document.querySelector(".recent-news-slider-next");
+  const prevBtn = document.querySelector(".recent-news-slider-prev");
 
-      if (swiperContainer && nextBtn && prevBtn) {
-        new Swiper(swiperContainer, {
-          direction: "horizontal",
-          loop: true,
-          slidesPerView: 1,
-          spaceBetween: 20,
-          navigation: {
-            nextEl: nextBtn, // 👈 Pass actual element
-            prevEl: prevBtn, // 👈 Pass actual element
-          },
-          breakpoints: {
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 30,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 40,
-            },
-          },
-        });
-      }
-    }, 500);
-  }, []);
+  if (!swiperContainer || !nextBtn || !prevBtn) return;
+
+  const swiper = new Swiper(swiperContainer, {
+    modules: [Navigation],
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: nextBtn,
+      prevEl: prevBtn,
+    },
+    breakpoints: {
+      768: { slidesPerView: 2, spaceBetween: 30 },
+      1024: { slidesPerView: 3, spaceBetween: 40 },
+    },
+  });
+
+  return () => swiper.destroy(true, true);
+}, [news]);
+
   return (
     <section className="recent-news bg-mobile-fullwidth">
       <div className="related-content">
@@ -135,9 +131,9 @@ const RecentNews = (props) => {
                         </ul>
                         <Link to={`/news/${e._id}`}>
                           <div className="item-title">
-                            <h5 style={{ textTransform: "capitalize" }}>
+                            <h4 style={{ textTransform: "capitalize" }}>
                               {e.title}
-                            </h5>
+                            </h4>
                           </div>
                         </Link>
                       </div>

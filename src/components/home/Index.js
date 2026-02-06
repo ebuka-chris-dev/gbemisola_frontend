@@ -19,7 +19,7 @@ const Index = () => {
   const fetchNews = async () => {
     try {
       const res = await axios.get(`${API_URI}/news/all?limit=10`)
-      const data = res.data.data.reverse();
+      const data = res.data.data;
       setNews(data)
       setLoading(false)
     } catch (err) {

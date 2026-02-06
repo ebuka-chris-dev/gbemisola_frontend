@@ -5,7 +5,7 @@ import Headers from "../../components/shared/Header";
 import Newsletter from "../../components/shared/Newsletter";
 import SocialMedia from "../../components/shared/SocialMedia";
 
-const OurWork = () => {
+const CapacityBuildingForTeachers = () => {
 
     return (
         <>
@@ -21,4 +21,4 @@ const OurWork = () => {
         </>
     )
 }
-export default OurWork;
+export default CapacityBuildingForTeachers;

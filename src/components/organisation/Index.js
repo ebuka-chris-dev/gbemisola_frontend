@@ -41,8 +41,8 @@ const Index = () => {
                   </span>
                 </div>
                 {/* .breadcrumbs */}
-                <div className="item-title">
-                  <h1 className="entry-title">
+                <div className="item-title bold-title">
+                  <h1 className="entry-title ">
                     Our Founder &amp; Organisation
                   </h1>
                 </div>
@@ -135,7 +135,7 @@ const Index = () => {
                     <p />
                   </div>
                 </section>
-                <h2 className="wp-block-heading">Future Goals:</h2>
+                <h2 className="wp-block-heading core" style={{fontWeight:"600"}}>Future Goals:</h2>
                 <ul className="wp-block-list">
                   <li>Reach 10,000 children annually through
                   expanded learning programs by 2027</li>

@@ -5,16 +5,16 @@ const Footer = () => {
       <footer className="content-info">
         <div className="footer-main">
           <div className="content-wrapper-inner">
-                      <div className="footer-main-bottom">
+            <div className="footer-main-bottom">
               <div className="footer-address">
-              UYK Hexahub Plot 1077A Balanga Cresent, Garki, Abuja
+                UYK Hexahub Plot 1077A Balanga Cresent, Garki, Abuja
 
                 {/* <br />
                 Tel +234 810 172 1180 */}
-               
+
                 <br />
-                <a href="mailto:info@light-for-the-world.org" style={{fontSize:"12px"}}>
-                Info@gbemisolayussufffoundation.org
+                <a href="mailto:info@light-for-the-world.org" style={{ fontSize: "12px" }}>
+                  Info@gbemisolayussufffoundation.org
                 </a>
                 {/* <br /> */}
                 {/* <br />
@@ -39,7 +39,7 @@ const Footer = () => {
               </div>
               <div className="footer-country-nav">
                 <h4>Gbemisola Yussuff
-                Foundation in your country</h4>
+                  Foundation in your country</h4>
               </div>
             </div>
           </div>

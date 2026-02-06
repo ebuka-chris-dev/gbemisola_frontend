@@ -1,11 +1,11 @@
-import Index from "../../components/our-work/Capacity-Building-For-Teachers/Index";
+import Index from "../../components/our-work/read-to-lead/Index";
 import { Borlabs } from "../../components/shared/Borlabs";
 import Footer from "../../components/shared/Footer";
 import Headers from "../../components/shared/Header";
 import Newsletter from "../../components/shared/Newsletter";
 import SocialMedia from "../../components/shared/SocialMedia";
 
-const OurWork = () => {
+const ReadToLead = () => {
 
     return (
         <>
@@ -21,4 +21,4 @@ const OurWork = () => {
         </>
     )
 }
-export default OurWork;
+export default ReadToLead;

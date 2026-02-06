@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-import MissionImg from "../../assets/images/mission2.jpg"
+import MissionImg from "../../assets/images/mission2.jpg";
+
+
 const Mission = () => {
   return (
     <>
@@ -24,7 +26,7 @@ const Mission = () => {
                       `}
                     alt="Inclusive education support"
                   />
-                
+
                 </figure>
               </Link>
             </div>
@@ -39,10 +41,12 @@ const Mission = () => {
                   <strong />
                 </p>
                 <p>
-                  A Nigeria where every child has access to
-quality education, breaking the cycle of
-poverty and creating a generation of empowered leaders
+                  Our mission is to empower children and communities by providing access to quality education through innovative programs.
+                  We are committed to fostering literacy and numeracy, promoting digital learning, and creating opportunities for skills
+                  development in underserved areas. Through our read to lead campaigns, smart learning hubs, and educational outreach,
+                  we aim to equip young learners with the tools they need to thrive in a rapidly changing world.
                 </p>
+                <br />
                 <Link
                   to="/about-us"
                   className="cta-button"

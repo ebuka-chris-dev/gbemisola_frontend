@@ -11,7 +11,7 @@ import './assets/styles/single-teaser.css';
 import './assets/styles/counter-icons.css';
 import './assets/styles/text-media.css';
 import './assets/styles/contact-box.css';
-
+import "./assets/styles/typography.css";
 
 
 import Home from './pages/home/Home';
@@ -29,6 +29,10 @@ import Message from './pages/message/Message';
 import ViewNews from './pages/view-news/ViewNews';
 import ContactUs from './pages/contact-us/ContactUs';
 import Donation from './pages/donation/Donation';
+import SokotoLearns from './pages/sokoto-learns/SokotoLearns';
+import SmartLearningHub from './pages/smart-learning-hub/SmartLearningHub';
+import ReadToLead from './pages/read-to-lead/ReadToLead';
+import CapacityBuildingForTeachers from './pages/capacity-building-for-teachers/CapacityBuildingForTeachers';
 
 
 
@@ -44,7 +48,11 @@ function App() {
    <Route path="/our-founder-organisation" element={<Organisation />} />
 
    <Route path="/founder-message" element={<Message />} />
-   <Route path="/our-work" element={<OurWork />} />
+   <Route path="/capacity-building-for-teachers" element={<CapacityBuildingForTeachers />} />
+   <Route path="/Literacy-and-Numeracy-Recovery-Program-in-Sokoto-State" element={<SokotoLearns />} />
+   <Route path="/smart-learning-hub" element={<SmartLearningHub />} />
+   <Route path="/read-to-lead-campaign" element={<ReadToLead />} />
+
    <Route path="/contact-us" element={<ContactUs />} />
    <Route path="/news" element={<News />} />
    <Route path="/news/:id" element={<ViewNews />} />

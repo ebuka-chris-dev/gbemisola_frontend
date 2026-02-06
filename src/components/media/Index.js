@@ -96,7 +96,7 @@ const Index = () => {
                   <span className="current">Media</span>
                 </div>
                 {/* .breadcrumbs */}
-                <div className="item-title">
+                <div className="item-title bold-title">
                   <h1 className="entry-title">Media</h1>
                 </div>
                 <span className="item-date" />
@@ -126,11 +126,14 @@ const Index = () => {
                     </p>
                   </div>
                 </section>
+                <br/>
                 {media?.length > 0 && (
                   <>
                     <MediaList data={images} />
                     <h3 className="wp-block-heading">More media coverage</h3>
-                    <ul className="wp-block-list">
+                <br/>
+
+                    <ul className="wp-block-list" style={{paddingLeft:"0px"}}>
                       <AudioList data={audio} />
                       <YouTube data={vidoe} />
                     </ul>

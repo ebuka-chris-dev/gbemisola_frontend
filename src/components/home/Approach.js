@@ -89,7 +89,7 @@ const Approach = () => {
                       Championing inclusive education
                     </h5>
                     <p>
-                    Ensuring every child, regardless of background or circumstance, has access to education.
+                    Ensuring every child,  has access to education.
                     </p>
                   </div>
                   <div className="teasers-item-more">

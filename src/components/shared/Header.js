@@ -8,12 +8,12 @@ import { API_URI } from "../../store/constant";
 const Header = () => {
   const [showNav, setShowNav] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
+
   const [media, setMedia] = useState([])
 
   const location = useLocation();
   const url = location.pathname;
-
-  console.log(url)
   const fetchMedia = async () => {
     try {
       const res = await axios.get(`${API_URI}/media/all?limit=4`)
@@ -26,6 +26,9 @@ const Header = () => {
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
+  };
+  const toggleDropdownForWork = () => {
+    setIsOpen2(!isOpen2);
   };
 
   useEffect(() => {
@@ -88,11 +91,54 @@ const Header = () => {
 
               <li
                 id="menu-item-1759"
-                className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1759"
-              >
-                <Link to="/our-work">
-                  <span>Our Work</span>
+                className={`
+                menu-item menu-item-type-post_type menu-item-object-page
+                 current-menu-item page_item page-item-876 current_page_item menu-item-has-children menu-item-909 no-flex
+                 ${isOpen2 ? 'open' : ''
+                  } 
+                `}              >
+                <Link to="#" onClick={toggleDropdownForWork}>
+                  <span>Our Work
+                    <span className={`dropdown-arrow ${isOpen2 ? 'open' : ''}`}>▼</span>
+                  </span>
                 </Link>
+
+                <ul className="sub-menu">
+                  <li
+                    id="menu-item-1626"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1626"
+                  >
+                    <Link
+                      to="/Literacy-and-Numeracy-Recovery-Program-in-Sokoto-State"
+                    ><span>Literacy and Numeracy Recovery Program in Sokoto State</span></Link >
+                  </li>
+                  <li
+                    id="menu-item-1626"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1626"
+                  >
+                    <Link
+                      to="/smart-learning-hub"
+                    ><span>Smart Learning Hub</span></Link >
+                  </li>
+
+                  <li
+                    id="menu-item-914"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-914"
+                  >
+                    <Link
+                      to="/read-to-lead-Campaign"
+                    ><span>Read to Lead Campaign</span></Link>
+                  </li>
+
+                  <li
+                    id="menu-item-915"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-915"
+                  >
+                    <Link
+                      to="/capacity-building-for-teachers"
+                    ><span>Capacity Building for Teachers</span></Link                      >
+                  </li>
+                </ul>
               </li>
               <li
                 id="menu-item-911"
@@ -136,7 +182,7 @@ const Header = () => {
         {/* <Link to="#" className="search toggle-search">
           <i className="fa fa-search" />
         </Link> */}
-        {url !== '/donations' ?  <Link to="/donations" className="cta-button cta-button-donate animated">
+        {url !== '/donations' ? <Link to="/donations" className="cta-button cta-button-donate animated">
           Donate
           <svg
             className="icon_heart"
@@ -158,36 +204,38 @@ const Header = () => {
       c14.9-9.19333,20-18.215,20-25C40-1.69061,23.33333-3.16561,20,5.89272z"
             />
           </svg>
-        </Link>: <a href="https://paystack.shop/pay/c3tryqx072" target="_blank" className="cta-button cta-button-donate animated">
-          Donate
-          <svg
-            className="icon_heart"
-            version="1.2"
-            baseProfile="tiny"
-            id="Capa_1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-            x="0px"
-            y="0px"
-            viewBox="0 0 40 37"
-            overflow="visible"
-            xmlSpace="preserve"
-          >
-            <path
-              id="Trazado_230_32_"
-              fill="#39B54A"
-              d="M20,5.89272C16.685-3.10561,0-1.76894,0,11.83439c0,6.78,5.1,15.80167,20,25
-      c14.9-9.19333,20-18.215,20-25C40-1.69061,23.33333-3.16561,20,5.89272z"
-            />
-          </svg>
-        </a> }
-       
+        </Link> : ""
+          //   <a href="https://paystack.shop/pay/c3tryqx072" target="_blank" className="cta-button cta-button-donate animated">
+          //     Donate
+          //     <svg
+          //       className="icon_heart"
+          //       version="1.2"
+          //       baseProfile="tiny"
+          //       id="Capa_1"
+          //       xmlns="http://www.w3.org/2000/svg"
+          //       xmlnsXlink="http://www.w3.org/1999/xlink"
+          //       x="0px"
+          //       y="0px"
+          //       viewBox="0 0 40 37"
+          //       overflow="visible"
+          //       xmlSpace="preserve"
+          //     >
+          //       <path
+          //         id="Trazado_230_32_"
+          //         fill="#39B54A"
+          //         d="M20,5.89272C16.685-3.10561,0-1.76894,0,11.83439c0,6.78,5.1,15.80167,20,25
+          // c14.9-9.19333,20-18.215,20-25C40-1.69061,23.33333-3.16561,20,5.89272z"
+          //       />
+          //     </svg>
+          //   </a>
+        }
+
         <Link
           to="#"
           className="burger-menu toggle-menu hc-nav-trigger hc-nav-1 toggle-open"
           aria-label="Main menu"
           role="button"
-          style={{float:"right"}}
+          style={{ marginLeft: "auto" }}
           onClick={() => setShowNav(true)}
         >
           <span className="sr-only">Show Navigation</span>

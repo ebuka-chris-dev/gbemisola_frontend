@@ -10,11 +10,14 @@ const Newsletter = () => {
             className="bg-image"
           />
           <h2>Subscribe to our newsletter</h2>
+          <br/>
           <p>
             <strong>
               Want to keep up to date with all our latest news and information?
             </strong>
           </p>
+          <br/>
+
           <a href="#" className="cta-button">
             Subscribe
           </a>
