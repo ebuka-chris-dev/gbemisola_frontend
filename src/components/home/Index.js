@@ -1,5 +1,5 @@
 import { Borlabs } from "../shared/Borlabs";
-import Newsletter from "../shared/Newsletter";
+// import Newsletter from "../shared/Newsletter";
 import SocialMedia from "../shared/SocialMedia";
 
 import RecentNews from "../shared/RecentNews";
@@ -42,7 +42,7 @@ const Index = () => {
         <RecentNews data={news.slice(0,6)} />
         <Approach />
         <Counter />
-        <Newsletter />
+        {/* <Newsletter /> */}
         <SocialMedia />
       </div>
         </>

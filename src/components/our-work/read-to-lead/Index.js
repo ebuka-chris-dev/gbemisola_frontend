@@ -1,8 +1,17 @@
-// import Gallery from "../Gallery";
+import Gallery from "../Gallery";
 // import PdfComponent from "../PdfComponent";
 // import YouTube from "../Youtube";
 import PGImg from "../../../assets/images/p4.jpg"
-
+import rd1 from "../../../assets/images/rd1.jpeg"
+import rd2 from "../../../assets/images/rd2.jpg"
+import rd3 from "../../../assets/images/rd3.jpg"
+import rd4 from "../../../assets/images/rd11.jpeg"
+import rd5 from "../../../assets/images/rd5.jpg"
+import rd6 from "../../../assets/images/rd6.jpeg"
+import rd7 from "../../../assets/images/rd7.jpeg"
+import rd8 from "../../../assets/images/rd8.jpeg"
+import rd9 from "../../../assets/images/rd9.jpeg"
+import rd10 from "../../../assets/images/rd10.jpeg"
 
 const Index = () => {
   return (
@@ -193,15 +202,27 @@ const Index = () => {
                     <p>
                       <strong>Empowering Future Leaders </strong>
                       <br />
-                      Through the "Read to Lead" Campaign, we are not only promoting reading and literacy but also empowering students to become future leaders in their communities. By providing children with the tools to succeed,
+                      Through the "Read to Lead" Campaign, we are not only promoting reading and literacy rdt also empowering students to become future leaders in their communities. By providing children with the tools to succeed,
                        we are helping them unlock their full potential and pave the way for brighter futures in a knowledge-driven world.
                     </p>
                    
                   </div>
                 </section>
                 {/* gallery  */}
-                {/* <Gallery/> */}
-                {/* <h4 className="wp-block-heading">
+  <Gallery
+                  img1={rd1}
+                  img2={rd2}
+                  img3={rd3}
+                  img4={rd4}
+                  img5={rd5}
+                  img6={rd6}
+                  img7={rd7}
+                  img8={rd8}
+                  img9={rd9}
+                  img10={rd10}
+
+
+                />                 {/* <h4 className="wp-block-heading">
                   More information on Inclusive Education
                 </h4> */}
                 {/* utube  */}

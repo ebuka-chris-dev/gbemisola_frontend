@@ -1,8 +1,17 @@
-// import Gallery from "../Gallery";
+import Gallery from "../Gallery";
 // import PdfComponent from "../PdfComponent";
 // import YouTube from "../Youtube";
 import PGImg from "../../../assets/images/p4.jpg"
-
+import sk1 from "../../../assets/images/sk1.jpeg"
+import sk2 from "../../../assets/images/sk2.jpeg"
+import sk3 from "../../../assets/images/sk3.jpeg"
+import sk4 from "../../../assets/images/sk4.jpeg"
+import sk5 from "../../../assets/images/sk5.jpeg"
+import sk6 from "../../../assets/images/sk6.jpeg"
+import sk7 from "../../../assets/images/sk7.heic"
+import sk8 from "../../../assets/images/sk8.jpg"
+import sk9 from "../../../assets/images/sk9.heic"
+import sk10 from "../../../assets/images/sk10.heic"
 
 const Index = () => {
   return (
@@ -121,7 +130,20 @@ const Index = () => {
                 </section>
               
                 {/* gallery  */}
-                {/* <Gallery/> */}
+                <Gallery 
+                img1={sk1}
+                img2={sk2}
+                img3={sk3}
+                img4={sk4}
+                img5={sk5}
+                img6={sk6}
+                img7={sk7}
+                img8={sk8}
+                img9={sk9}
+                img10={sk10}
+
+
+                />
                 {/* <h4 className="wp-block-heading">
                   More information on Inclusive Education
                 </h4> */}

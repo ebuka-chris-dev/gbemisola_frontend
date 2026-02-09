@@ -2,7 +2,7 @@ import Index from "../../components/media/Index";
 import { Borlabs } from "../../components/shared/Borlabs";
 import Footer from "../../components/shared/Footer";
 import Header from "../../components/shared/Header";
-import Newsletter from "../../components/shared/Newsletter";
+// import Newsletter from "../../components/shared/Newsletter";
 import RecentNews from "../../components/shared/RecentNews";
 import SocialMedia from "../../components/shared/SocialMedia";
 import { useEffect, useState } from "react";
@@ -37,7 +37,7 @@ const Media = () => {
         <Borlabs />
         <Index />
         <RecentNews data={news.slice(0, 6)} />
-        <Newsletter />
+        {/* <Newsletter /> */}
         <SocialMedia />
       </div>
       <Footer />

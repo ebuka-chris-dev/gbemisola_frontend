@@ -47,7 +47,7 @@ const Footer = () => {
         <div className="footer-bar">
           <div className="content-wrapper-inner">
             <span className="footer-copyright">
-              © 2025 - Gbemisola Yussuff Foundation
+              © 2026 - Gbemisola Yussuff Foundation
             </span>
             <div className="menu-footer-container">
               <ul id="menu-footer" className="nav">

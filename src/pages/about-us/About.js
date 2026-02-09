@@ -2,7 +2,7 @@ import Index from "../../components/about-us/Index";
 import { Borlabs } from "../../components/shared/Borlabs";
 import Footer from "../../components/shared/Footer";
 import Header from "../../components/shared/Header";
-import Newsletter from "../../components/shared/Newsletter";
+// import Newsletter from "../../components/shared/Newsletter";
 import SocialMedia from "../../components/shared/SocialMedia";
 
 const About = () => {
@@ -12,7 +12,7 @@ const About = () => {
       <div className="content-wrapper">
       <Borlabs/>
         <Index />
-        <Newsletter />
+        {/* <Newsletter /> */}
         <SocialMedia />
       </div>
       <Footer />

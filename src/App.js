@@ -15,11 +15,9 @@ import "./assets/styles/typography.css";
 
 
 import Home from './pages/home/Home';
-import Test from './pages/Test';
 import About from './pages/about-us/About';
 import Organisation from './pages/organisation/Organisation';
 
-import OurWork from './pages/our-work/OurWork';
 import News from './pages/news/News';
 import Media from './pages/media/Media';
 import WorkWithUs from './pages/work-with-us/WorkWithUs';
@@ -28,7 +26,7 @@ import Partnership from './pages/partnership/Partnership';
 import Message from './pages/message/Message';
 import ViewNews from './pages/view-news/ViewNews';
 import ContactUs from './pages/contact-us/ContactUs';
-import Donation from './pages/donation/Donation';
+// import Donation from './pages/donation/Donation';
 import SokotoLearns from './pages/sokoto-learns/SokotoLearns';
 import SmartLearningHub from './pages/smart-learning-hub/SmartLearningHub';
 import ReadToLead from './pages/read-to-lead/ReadToLead';
@@ -59,18 +57,9 @@ function App() {
    <Route path="/news/media" element={<Media />} />
    <Route path="/work-with-us" element={<WorkWithUs />} />
    <Route path="/donation-information" element={<DonationInfo />} />
-   <Route path="/donations" element={<Donation />} />
+   {/* <Route path="/donations" element={<Donation />} /> */}
 
    <Route path="/partnerships" element={<Partnership />} />
-
-
-
-
-
-
-
-   <Route path="/test" element={<Test />} />
-
 
    </Routes>
 

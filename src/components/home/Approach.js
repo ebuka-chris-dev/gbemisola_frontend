@@ -14,7 +14,7 @@ const Approach = () => {
               <div className="teasers-item-content">
                 <div className="teasers-image-wrap">
                   <div className="teasers-image focus-point-image">
-                    <Link to="/news">
+                    <Link to="/read-to-lead-campaign">
                       <figure className="image image-718">
                         <img
                           decoding="async"
@@ -47,7 +47,7 @@ const Approach = () => {
                   </div>
                   <div className="teasers-item-more">
                     <Link
-                      to="/news"
+                      to="/read-to-lead-campaign"
                       className="cta-button cta-button-primary"
                     >
                       Learn more
@@ -60,7 +60,7 @@ const Approach = () => {
               <div className="teasers-item-content">
                 <div className="teasers-image-wrap">
                   <div className="teasers-image focus-point-image">
-                    <Link to="/news">
+                    <Link to="/smart-learning-hub">
                       <figure className="image image-891">
                         <img
                           decoding="async"
@@ -94,7 +94,7 @@ const Approach = () => {
                   </div>
                   <div className="teasers-item-more">
                     <Link
-                      to="/news"
+                      to="/smart-learning-hub"
                       className="cta-button cta-button-primary"
                     >
                       Learn more
@@ -107,7 +107,7 @@ const Approach = () => {
               <div className="teasers-item-content">
                 <div className="teasers-image-wrap">
                   <div className="teasers-image focus-point-image">
-                    <Link to="/our-work">
+                    <Link to="/Literacy-and-Numeracy-Recovery-Program-in-Sokoto-State">
                       <figure className="image image-711">
                         <img
                           decoding="async"
@@ -139,7 +139,7 @@ const Approach = () => {
                   </div>
                   <div className="teasers-item-more">
                     <Link
-                      to="/our-work"
+                      to="/Literacy-and-Numeracy-Recovery-Program-in-Sokoto-State"
                       className="cta-button cta-button-primary"
                     >
                       Learn more

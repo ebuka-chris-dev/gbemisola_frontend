@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import DonationImage from "../../assets/images/donation-1.jpg";
+import W1 from "../../assets/images/w4.png"
+import W2 from "../../assets/images/w3.png";
+import W3 from "../../assets/images/w2.png";
 
 const Index = () => {
   return (
@@ -57,7 +60,7 @@ const Index = () => {
                     <div className="teasers-item-content">
                       <div className="teasers-image-wrap">
                         <div className="teasers-image focus-point-image">
-                          <a href="https://paystack.shop/pay/c3tryqx072" target="_blank">
+                          <a href="https://gbemisolayussufffoundation.org/donations" target="_blank">
                             <figure className="image image-194">
                               <img
                                 decoding="async"
@@ -65,12 +68,12 @@ const Index = () => {
                                 style={{ objectPosition: "44.56% 47.79%" }}
                                 width={1024}
                                 height={845}
-                                src="https://i.pinimg.com/736x/f9/39/6a/f9396a7cfbffdbf9143f228202451016.jpg"
-                                srcSet="
-                                   https://i.pinimg.com/736x/f9/39/6a/f9396a7cfbffdbf9143f228202451016.jpg 2048w,
-                                   https://i.pinimg.com/736x/f9/39/6a/f9396a7cfbffdbf9143f228202451016.jpg  1440w,
-                                    https://i.pinimg.com/736x/f9/39/6a/f9396a7cfbffdbf9143f228202451016.jpg  960w
-                                  "
+                                src={W1}
+                                srcSet={`
+                                  ${W1} 2048w,
+                                  ${W1}  1440w,
+                                   ${W1}  960w
+                                  `}
                                 alt="donate."
                               />
                             </figure>
@@ -88,7 +91,7 @@ const Index = () => {
                           </p>
                         </div>
                         <div className="teasers-item-more">
-                          <a href="#" className="cta-button cta-button-primary">
+                          <a href="https://gbemisolayussufffoundation.org/donations" target="_blank" className="cta-button cta-button-primary">
                             Learn more
                           </a>
                         </div>
@@ -107,12 +110,12 @@ const Index = () => {
                                 style={{ objectPosition: "53.92% 45.43%" }}
                                 width={1024}
                                 height={683}
-                                src="https://i.pinimg.com/736x/13/7e/75/137e759ff27dbd99a3245425cd2a00cd.jpg"
-                                srcSet="
-                                    https://i.pinimg.com/736x/13/7e/75/137e759ff27dbd99a3245425cd2a00cd.jpg 2048w,
-                                   https://i.pinimg.com/736x/13/7e/75/137e759ff27dbd99a3245425cd2a00cd.jpg  1440w,
-                                    https://i.pinimg.com/736x/13/7e/75/137e759ff27dbd99a3245425cd2a00cd.jpg  960w
-                                  "
+                                src={W2}
+                                srcSet={`
+                                  ${W2} 2048w,
+                                  ${W2}  1440w,
+                                   ${W2}  960w
+                                  `}
                                 alt="partnership"
                               />
                               <figcaption className="sr-only">
@@ -155,13 +158,12 @@ const Index = () => {
                                 style={{ objectPosition: "54.14% 44.37%" }}
                                 width={1024}
                                 height={684}
-                                src="https://i.pinimg.com/474x/c7/27/5d/c7275d7d339d98e184e10f43ada26a68.jpg"
-                                srcSet="https://i.pinimg.com/474x/c7/27/5d/c7275d7d339d98e184e10f43ada26a68.jpg
-                                2048w,
-                               https://i.pinimg.com/474x/c7/27/5d/c7275d7d339d98e184e10f43ada26a68.jpg
-                                1440w,
-                                https://i.pinimg.com/474x/c7/27/5d/c7275d7d339d98e184e10f43ada26a68.jpg
-                                960w"
+                                src={W3}
+                                srcSet={`
+                                  ${W3} 2048w,
+                                  ${W3}  1440w,
+                                   ${W3}  960w
+                                  `}
                                 alt="donation information "
                               />
                             </figure>

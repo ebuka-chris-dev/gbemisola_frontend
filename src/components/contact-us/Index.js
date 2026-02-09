@@ -39,7 +39,8 @@ const errorStyle = {
 };
 
 const Index = () => {
- const [loading,setLoading] = useState(false)
+ const [loading,setLoading] = useState(false);
+ 
   const [formData, setFormData] = useState({
     name: "",
     email: "",

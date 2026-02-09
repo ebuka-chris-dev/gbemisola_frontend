@@ -72,8 +72,8 @@ const Index = () => {
                   <li>
 
                     <strong>How can I donate to Gbemisola Yussuff Foundation?</strong><br />
-                    <Link to="/donations"  rel="noreferrer noopener">Click here to make a monthly or one-time donation
-                      online</Link>
+                    <a href="https://gbemisolayussufffoundation.org/donations" target="_blank">Click here to make a monthly or one-time donation
+                      online</a>
                     — it’s fast, easy, and secure! If you would
                     like to make the greatest possible impact, please consider
                     signing up for a monthly donation. <br />
@@ -88,7 +88,7 @@ const Index = () => {
                     <strong>Donate Money </strong><br />
                     Every contribution, big or small, helps us reach more children. Click the button below to make a secure one time online donation.
                    
-                    <a href="https://paystack.shop/pay/c3tryqx072" style={{color:"blue"}} target="_blank" rel="noreferrer noopener"> [Donate Now] </a>
+                    <a href="https://gbemisolayussufffoundation.org/donations" style={{color:"blue"}} target="_blank" rel="noreferrer noopener"> [Donate Now] </a>
 
                   </li>
                   <li>

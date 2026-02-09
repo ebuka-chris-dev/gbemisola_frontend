@@ -12,18 +12,18 @@ const Counter = () => {
               <div className="counter-icons-item-image">
                 <img decoding="async" src={ReachImg} />
               </div>
-              <h3>10,000</h3>
+              <h3>100,000</h3>
               <p>
-                Reach 10,000 children annually through expanded learning programs by 2027
+                Reach 100,000 children annually through expanded learning programs by 2027
               </p>
             </div>
             <div className="counter-icons-item">
               <div className="counter-icons-item-image">
                 <img decoding="async" src={TrainImg} />
               </div>
-              <h3>500</h3>
+              <h3>2,000</h3>
               <p>
-              Train 500 teachers in innovative, culturally relevant pedagogies.
+              Train 2,000 teachers in innovative, culturally relevant pedagogies.
 
               </p>
             </div>
@@ -32,7 +32,7 @@ const Counter = () => {
                 <img decoding="async" src={HouseImg} />
               </div>
               <h3>20</h3>
-              <p>Build  or refurbish 20 schools across Northen Nigeria</p>
+              <p>Build  or refurbish 20 library in Government schools across the Northern Nigeria</p>
             </div>
             
           </div>

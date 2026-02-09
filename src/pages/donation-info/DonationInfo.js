@@ -1,7 +1,7 @@
 import Footer from "../../components/shared/Footer";
 import Header from "../../components/shared/Header";
 import Index from "../../components/donation-info/Index";
-import Newsletter from "../../components/shared/Newsletter";
+// import Newsletter from "../../components/shared/Newsletter";
 import SocialMedia from "../../components/shared/SocialMedia";
 import { Borlabs } from "../../components/shared/Borlabs";
 
@@ -12,7 +12,7 @@ const DonationInfo = () => {
     <Borlabs/>
       <Index />
       {/* recent news  */}
-      <Newsletter />
+      {/* <Newsletter /> */}
       <SocialMedia />
     </div>
     <Footer />

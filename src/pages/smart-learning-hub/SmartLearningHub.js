@@ -2,7 +2,7 @@ import Index from "../../components/our-work/smart-learning-hub/Index";
 import { Borlabs } from "../../components/shared/Borlabs";
 import Footer from "../../components/shared/Footer";
 import Headers from "../../components/shared/Header";
-import Newsletter from "../../components/shared/Newsletter";
+// import Newsletter from "../../components/shared/Newsletter";
 import SocialMedia from "../../components/shared/SocialMedia";
 
 const SmartLearningHub = () => {
@@ -14,7 +14,7 @@ const SmartLearningHub = () => {
                 <Borlabs />
                 <Index />
                 {/* relarted-content */}
-                <Newsletter />
+                {/* <Newsletter /> */}
                 <SocialMedia />
             </div>
             <Footer />

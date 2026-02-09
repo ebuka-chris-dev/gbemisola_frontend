@@ -5,11 +5,11 @@ import Image from "../../assets/images/p7.jpg";
 const Index = () => {
   return (
     <>
-    <article className="post-929 page type-page status-publish hentry">
+      <article className="post-929 page type-page status-publish hentry">
         <div className="page-image focus-point-image">
           <figure className="image image-7349">
-            <img fetchPriority="high" loading="lazy" style={{objectPosition: '50% 50%'}} width={1920} height={1080} 
-            src={Image} srcSet={`
+            <img fetchPriority="high" loading="lazy" style={{ objectPosition: '50% 50%' }} width={1920} height={1080}
+              src={Image} srcSet={`
                    ${Image} 2048w,
                ${Image} 1440w,
                 ${Image}  960w
@@ -21,9 +21,8 @@ const Index = () => {
             <div className="entry-content pull-up">
               <header>
                 <div className="breadcrumb">
-                  <span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" href>Our Work</a></span>
-                  <span className="delimiter">/</span>
-                  <span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" href>Our Approach</a></span>
+
+                  <span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" href>Work with us</a></span>
                   <span className="delimiter">/</span>
                   <span className="current">Partnerships</span>
                 </div>
@@ -143,11 +142,11 @@ const Index = () => {
                       If you are an international organisation interested in
                       exploring collaboration with Gbemisola Yussuff Foundation, you
                       can contact us here:
-                      <a href="mailto:partnerships@light-for-the-world.org" target="_blank" rel="noreferrer noopener"> gbemisolayussufffoundation@gmail.com.</a>&nbsp; &nbsp;
+                      <a href="mailto:partnerships@light-for-the-world.org" target="_blank" rel="noreferrer noopener"> info@gbemisolayussufffoundation.org</a>&nbsp; &nbsp;
                     </p>
                   </div>
                 </section>
-              
+
                 <section className="paragraph">
                   <div className="paragraph__container">
                     <p>
@@ -168,7 +167,7 @@ const Index = () => {
                     </p>
                   </div>
                 </section>
-              
+
                 {/* <ul className="wp-block-list">
                   <li>
                     <a href="#" target="_blank" rel="noreferrer noopener">Federation of Ethiopian Associations of Persons with

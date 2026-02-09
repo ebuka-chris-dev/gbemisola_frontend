@@ -182,7 +182,8 @@ const Header = () => {
         {/* <Link to="#" className="search toggle-search">
           <i className="fa fa-search" />
         </Link> */}
-        {url !== '/donations' ? <Link to="/donations" className="cta-button cta-button-donate animated">
+       <a href="https://gbemisolayussufffoundation.org/donations" target="_blank"
+        className="cta-button cta-button-donate animated">
           Donate
           <svg
             className="icon_heart"
@@ -204,31 +205,7 @@ const Header = () => {
       c14.9-9.19333,20-18.215,20-25C40-1.69061,23.33333-3.16561,20,5.89272z"
             />
           </svg>
-        </Link> : ""
-          //   <a href="https://paystack.shop/pay/c3tryqx072" target="_blank" className="cta-button cta-button-donate animated">
-          //     Donate
-          //     <svg
-          //       className="icon_heart"
-          //       version="1.2"
-          //       baseProfile="tiny"
-          //       id="Capa_1"
-          //       xmlns="http://www.w3.org/2000/svg"
-          //       xmlnsXlink="http://www.w3.org/1999/xlink"
-          //       x="0px"
-          //       y="0px"
-          //       viewBox="0 0 40 37"
-          //       overflow="visible"
-          //       xmlSpace="preserve"
-          //     >
-          //       <path
-          //         id="Trazado_230_32_"
-          //         fill="#39B54A"
-          //         d="M20,5.89272C16.685-3.10561,0-1.76894,0,11.83439c0,6.78,5.1,15.80167,20,25
-          // c14.9-9.19333,20-18.215,20-25C40-1.69061,23.33333-3.16561,20,5.89272z"
-          //       />
-          //     </svg>
-          //   </a>
-        }
+        </a> 
 
         <Link
           to="#"
