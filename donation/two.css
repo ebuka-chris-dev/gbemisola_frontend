@@ -189,12 +189,21 @@
         scroll-behavior: smooth
     }
 }
-
+/* body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+} */
 body {
+    font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
     margin: 0;
-    font-family: var(--bs-body-font-family);
+    /* font-family: var(--bs-body-font-family); */
     font-size: var(--bs-body-font-size);
-    font-weight: var(--bs-body-font-weight);
+    /* font-weight: var(--bs-body-font-weight); */
     line-height: var(--bs-body-line-height);
     color: var(--bs-body-color);
     text-align: var(--bs-body-text-align);
