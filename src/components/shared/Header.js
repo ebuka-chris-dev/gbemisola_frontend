@@ -7,9 +7,7 @@ import { API_URI } from "../../store/constant";
 
 const Header = () => {
   const [showNav, setShowNav] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
-  const [isOpen2, setIsOpen2] = useState(false);
-
+const [activeMenu, setActiveMenu] = useState(null);
   const [media, setMedia] = useState([])
 
   const location = useLocation();
@@ -24,12 +22,9 @@ const Header = () => {
     }
   }
 
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
-  const toggleDropdownForWork = () => {
-    setIsOpen2(!isOpen2);
-  };
+ const toggleMenu = (menu) => {
+  setActiveMenu(activeMenu === menu ? null : menu);
+};
 
   useEffect(() => {
     fetchMedia();
@@ -50,13 +45,12 @@ const Header = () => {
                 className={`
                 menu-item menu-item-type-post_type menu-item-object-page
                  current-menu-item page_item page-item-876 current_page_item menu-item-has-children menu-item-909 no-flex
-                 ${isOpen ? 'open' : ''
-                  } 
+                ${activeMenu === "about" ? "open" : ""}
                 `}
               >
-                <Link to="#" onClick={toggleDropdown}>
+                <Link to="#"onClick={() => toggleMenu("about")}>
                   <span>About Us
-                    <span className={`dropdown-arrow ${isOpen ? 'open' : ''}`}>▼</span>
+                    <span className={`dropdown-arrow ${activeMenu === "about" ? 'open' : ''}`}>▼</span>
 
                   </span>
                 </Link>
@@ -94,16 +88,17 @@ const Header = () => {
                 className={`
                 menu-item menu-item-type-post_type menu-item-object-page
                  current-menu-item page_item page-item-876 current_page_item menu-item-has-children menu-item-909 no-flex
-                 ${isOpen2 ? 'open' : ''
-                  } 
+                 ${activeMenu === "work" ? "open" : ""}
                 `}              >
-                <Link to="#" onClick={toggleDropdownForWork}>
+                <Link to="#" onClick={() => toggleMenu("work")}>
                   <span>Our Work
-                    <span className={`dropdown-arrow ${isOpen2 ? 'open' : ''}`}>▼</span>
+                    <span className={`dropdown-arrow ${activeMenu === "work" ? 'open' : ''}`}>▼</span>
                   </span>
                 </Link>
 
                 <ul className="sub-menu">
+
+
                   <li
                     id="menu-item-1626"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1626"
@@ -112,6 +107,8 @@ const Header = () => {
                       to="/Literacy-and-Numeracy-Recovery-Program-in-Sokoto-State"
                     ><span>Literacy and Numeracy Recovery Program in Sokoto State</span></Link >
                   </li>
+                  <hr style={{ margin: "0px" }} />
+
                   <li
                     id="menu-item-1626"
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1626"
@@ -120,6 +117,7 @@ const Header = () => {
                       to="/smart-learning-hub"
                     ><span>Smart Learning Hub</span></Link >
                   </li>
+                  <hr style={{ margin: "0px" }} />
 
                   <li
                     id="menu-item-914"
@@ -129,6 +127,7 @@ const Header = () => {
                       to="/read-to-lead-Campaign"
                     ><span>Read to Lead Campaign</span></Link>
                   </li>
+                  <hr style={{ margin: "0px" }} />
 
                   <li
                     id="menu-item-915"
@@ -141,49 +140,118 @@ const Header = () => {
                 </ul>
               </li>
               <li
-                id="menu-item-911"
-                className="menu-item menu-item-type-post_type menu-item-object-page  menu-item-911"
-              >
-                <Link to="/news">
-                  <span>News</span>
+                id="menu-item-1759"
+                className={`
+                menu-item menu-item-type-post_type menu-item-object-page
+                 current-menu-item page_item page-item-876 current_page_item menu-item-has-children menu-item-909 no-flex
+                 ${activeMenu === "registration" ? "open" : ""}
+                `}              >
+                <Link to="#" onClick={() => toggleMenu("registration")}>
+                  <span>Read to Lead Sokoto
+                    <span className={`dropdown-arrow ${activeMenu === "registration" ? 'open' : ''}`}>▼</span>
+                  </span>
                 </Link>
+                <ul className="sub-menu">
 
+                  <li
+                    id="menu-item-1626"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1626"
+                  >
+                    <Link
+                      to="/read-to-lead-campaign/register"
+                    ><span>Register Now</span></Link >
+                  </li>
+                  <hr style={{ margin: "0px" }} />
+                  <li
+                    id="menu-item-1626"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1626"
+                  >
+                    <Link
+                      to="/Read-to-Lead-Campaign-Sokoto-registration-system"
+                    ><span>Read to Lead Campaign Sokoto Registration System</span></Link >
+                  </li>
+
+                </ul>
               </li>
-              {media.length >= 1 && <li
-                id="menu-item-911"
-                className="menu-item menu-item-type-post_type menu-item-object-page  menu-item-911"
-              >
-                <Link to="/news/media">
-                  <span>Media</span>
-                </Link>
-              </li>
-
-              }
-
               <li
-                id="menu-item-913"
-                className="menu-item menu-item-type-post_type menu-item-object-page menu-item-913"
-              >
-                <Link to="/work-with-us">
-                  <span>Work With Us</span>
+                id="menu-item-1759"
+                className={`
+                menu-item menu-item-type-post_type menu-item-object-page
+                 current-menu-item page_item page-item-876 current_page_item menu-item-has-children menu-item-909 no-flex
+                 ${activeMenu === "news" ? "open" : ""}
+                `}              >
+                <Link to="#" onClick={() => toggleMenu("news")}>
+                  <span>News
+                    <span className={`dropdown-arrow ${activeMenu === "news" ? 'open' : ''}`}>▼</span>
+                  </span>
                 </Link>
+                <ul className="sub-menu">
+
+                  <li
+                    id="menu-item-1290"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1626"
+                  >
+                    <Link
+                      to="/news"
+                    ><span>News</span></Link >
+                  </li>
+                  <hr style={{ margin: "0px" }} />
+
+                  <li
+                    id="menu-item-11290"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1626"
+                  >
+                    <Link
+                      to="/media"
+                    ><span>Media</span></Link >
+                  </li>
+
+                </ul>
               </li>
               <li
-                id="menu-item-913"
-                className="menu-item menu-item-type-post_type menu-item-object-page menu-item-913"
-              >
-                <Link to="/contact-us">
-                  <span>Contact Us</span>
+                id="menu-item-1759"
+                className={`
+                menu-item menu-item-type-post_type menu-item-object-page
+                 current-menu-item page_item page-item-876 current_page_item menu-item-has-children menu-item-909 no-flex
+                 ${activeMenu === "workWithUs" ? "open" : ""}
+                `}              >
+                <Link to="#" onClick={() => toggleMenu("workWithUs")}>
+                  <span>Work With Us
+                    <span className={`dropdown-arrow ${activeMenu === "workWithUs" ? 'open' : ''}`}>▼</span>
+                  </span>
                 </Link>
+                <ul className="sub-menu">
+
+                  <li
+                    id="menu-item-1290"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1626"
+                  >
+                    <Link
+                      to="/work-with-us"
+                    ><span>Work With Us</span></Link >
+                  </li>
+                  <hr style={{ margin: "0px" }} />
+
+                  <li
+                    id="menu-item-11290"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1626"
+                  >
+                    <Link
+                      to="/contact-us"
+                    ><span>Contact Us</span></Link >
+                  </li>
+
+                </ul>
               </li>
+
             </ul>
           </div>
         </nav>
         {/* <Link to="#" className="search toggle-search">
           <i className="fa fa-search" />
         </Link> */}
-       <a href="https://gbemisolayussufffoundation.org/donations" target="_blank"
-        className="cta-button cta-button-donate animated">
+        <a href="https://gbemisolayussufffoundation.org/donations" target="_blank"
+          className="cta-button cta-button-donate animated">
           Donate
           <svg
             className="icon_heart"
@@ -205,7 +273,7 @@ const Header = () => {
       c14.9-9.19333,20-18.215,20-25C40-1.69061,23.33333-3.16561,20,5.89272z"
             />
           </svg>
-        </a> 
+        </a>
 
         <Link
           to="#"

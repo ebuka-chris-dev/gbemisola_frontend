@@ -1,7 +1,7 @@
 import PGImg from "../../assets/images/p4.jpg"
 import { useState } from "react";
 import { API_URI } from "../../store/constant";
-import {  toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 
 const inputStyle = {
@@ -39,18 +39,18 @@ const errorStyle = {
 };
 
 const Index = () => {
- const [loading,setLoading] = useState(false);
- 
+  const [loading, setLoading] = useState(false);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
-    subject:""
+    subject: ""
   });
 
   const [errors, setErrors] = useState({
     name: "",
-    subject:"",
+    subject: "",
     email: "",
     message: "",
   });
@@ -91,7 +91,7 @@ const Index = () => {
       draggable: true,
       progress: undefined,
       theme: "light",
-      });
+    });
   }
   const notifyError = () => {
     toast.error('Failed to send Message, kindly try again later!', {
@@ -103,7 +103,7 @@ const Index = () => {
       draggable: true,
       progress: undefined,
       theme: "light",
-      });
+    });
   }
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -129,10 +129,11 @@ const Index = () => {
         notifySuccess();
         setFormData({ name: '', email: '', subject: '', message: '' });
       } else {
-        notifyError()      }
+        notifyError()
+      }
     } catch (err) {
       console.error(err);
-      notifyError()      
+      notifyError()
     }
   };
   return (
@@ -173,8 +174,14 @@ const Index = () => {
               <section id="readSpeakerSection">
                 <section className="paragraph">
                   <div className="paragraph__container">
-                    <div className="bg-white shadow-lg rounded-xl p-6 w-full max-w-md mx-auto">
-                      <form onSubmit={handleSubmit}>
+                    {/* <div className="bg-white shadow-lg rounded-xl p-6 w-full max-w-md mx-auto"> */}
+                    <h3>
+                      Kindly reach out to us via our email at{" "}
+                      <a href="mailto:Info@gbemisolayussufffoundation.org">
+                        Info@gbemisolayussufffoundation.org
+                      </a>
+                    </h3>
+                    {/* <form onSubmit={handleSubmit}>
                         <input
                           type="text"
                           name="name"
@@ -221,8 +228,8 @@ const Index = () => {
                         <button type="submit" style={buttonStyle}>
                           {`${loading ? "Sending":"Send"}`} Message
                         </button>
-                      </form>
-                    </div>
+                      </form> */}
+                    {/* </div> */}
 
                   </div>
                 </section>

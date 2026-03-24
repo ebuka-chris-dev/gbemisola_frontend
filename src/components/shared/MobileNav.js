@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 const MobileNav = ({ setShowNav }) => {
   const [open, setOpen] = useState(false);
   const [open2, setOpen2] = useState(false);
+  const [open3, setOpen3] = useState(false);
+  const [open4, setOpen4] = useState(false);
+
+
 
   return (
     <nav
@@ -15,7 +19,7 @@ const MobileNav = ({ setShowNav }) => {
       <div
         className="nav-container"
         bis_skin_checked={1}
-        style={{ transform: "translate3d(0px, 0px, 0px)",width:"60%" }}
+        style={{ transform: "translate3d(0px, 0px, 0px)", width: "70%" }}
       >
         <div
           className={`nav-wrapper nav-wrapper-0 ${open || open2 ? "sub-level-open" : ""}`}
@@ -114,6 +118,8 @@ const MobileNav = ({ setShowNav }) => {
                           </Link>
                         </div>
                       </li>
+                      <hr style={{ margin: "0px" }} />
+
                       <li className="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-1626">
                         <div className="nav-item-wrapper" bis_skin_checked={1}>
                           <Link
@@ -126,11 +132,12 @@ const MobileNav = ({ setShowNav }) => {
                           </Link>
                         </div>
                       </li>
-
                     </ul>
                   </div>
                 </div>
               </li>
+                      <hr style={{ margin: "0px" }} />
+
               <li className={`nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1759 nav-parent ${open2 ? 'level-open' : ''} `}>
                 <input
                   type="checkbox"
@@ -195,6 +202,7 @@ const MobileNav = ({ setShowNav }) => {
                       aria-level={2}
                       className="sub-menu"
                     >
+
                       <li className="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-916 nav-parent">
                         <input
                           type="checkbox"
@@ -215,10 +223,12 @@ const MobileNav = ({ setShowNav }) => {
                           >
                             Sokoto Learns
                           </Link>
-                          
+
                         </div>
-                        
+
                       </li>
+                      <hr style={{ margin: "0px" }} />
+
                       <li className="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1744 nav-parent">
                         <input
                           type="checkbox"
@@ -239,10 +249,12 @@ const MobileNav = ({ setShowNav }) => {
                           >
                             Smart Learning Hub
                           </Link>
-                         
+
                         </div>
-                        
+
                       </li>
+                      <hr style={{ margin: "0px" }} />
+
                       <li className="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-918 nav-parent">
                         <input
                           type="checkbox"
@@ -263,10 +275,11 @@ const MobileNav = ({ setShowNav }) => {
                           >
                             Read to Lead Campaign
                           </Link>
-                          
+
                         </div>
-                        
+
                       </li>
+                      <hr style={{ margin: "0px" }} />
                       <li className="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1786 nav-parent">
                         <input
                           type="checkbox"
@@ -285,52 +298,264 @@ const MobileNav = ({ setShowNav }) => {
                             tabIndex={0}
                             role="menuitem"
                           >
-                           Capacity Building For Teachers
+                            Capacity Building For Teachers
                           </Link>
-                          
+
                         </div>
-                        
+
                       </li>
                     </ul>
                   </div>
                 </div>
               </li>
+                      <hr style={{ margin: "0px" }} />
 
-              <li className="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-911 nav-parent">
+              {/* start */}
+              <li className={`nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1759 nav-parent ${open3 ? 'level-open' : ''} `}>
                 <input
                   type="checkbox"
-                  id="hc-nav-1-1-2"
+                  id="hc-nav-1-1-1"
                   className="hc-chk"
                   tabIndex={-1}
                   data-level={1}
-                  data-index={2}
-                  defaultValue="bq0357zed66"
+                  data-index={1}
+                  defaultValue="j4xx2uyw6c"
                   defaultChecked="false"
                 />
                 <div className="nav-item-wrapper" bis_skin_checked={1}>
                   <Link
-                    to="/news"
+                    to="#"
+                    className="nav-item-link"
+                    tabIndex={0}
+                    role="menuitem"
+                  >Read To Lead Sokoto
+                  </Link>
+                  <a
+                    href="#"
+                    className="nav-next"
+                    aria-label="Submenu: Our Work"
+                    role="menuitem"
+                    tabIndex={0}
+                    aria-controls="menu-j4xx2uyw6c"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    onClick={() => setOpen3(!open3)}
+
+                  >
+                    <span />
+                  </a>
+                </div>
+                <div
+                  className="nav-wrapper nav-wrapper-1"
+                  data-level={1}
+                  data-index={1}
+                  bis_skin_checked={1}
+                >
+                  <div className="nav-content" bis_skin_checked={1}>
+                    <h2 className="level-title">Read To Lead Sokoto</h2>
+                    <div className="nav-back" bis_skin_checked={1}>
+                      <div className="nav-item-wrapper" bis_skin_checked={1}>
+                        <a
+                          href="#"
+                          className="nav-back-button"
+                          role="menuitem"
+                          tabIndex={0}
+                          onClick={() => setOpen3(!open3)}
+
+                        >
+                          Back
+                          <span />
+                        </a>
+                      </div>
+                    </div>
+                    <ul
+                      id="menu-j4xx2uyw6c"
+                      role="menu"
+                      aria-level={2}
+                      className="sub-menu"
+                    >
+
+                      <li className="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-916 nav-parent">
+                        <input
+                          type="checkbox"
+                          id="hc-nav-1-2-0"
+                          className="hc-chk"
+                          tabIndex={-1}
+                          data-level={2}
+                          data-index={0}
+                          defaultValue="sc58kjqoakm"
+                          defaultChecked="false"
+                        />
+                        <div className="nav-item-wrapper" bis_skin_checked={1}>
+                          <Link
+                            to="/Read-to-Lead-Campaign/register"
+                            className="nav-item-link"
+                            tabIndex={0}
+                            role="menuitem"
+                          >
+                            Register Now
+                          </Link>
+
+                        </div>
+
+                      </li>
+                      <hr style={{ margin: "0px" }} />
+
+                      <li className="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1744 nav-parent">
+                        <input
+                          type="checkbox"
+                          id="hc-nav-1-2-1"
+                          className="hc-chk"
+                          tabIndex={-1}
+                          data-level={2}
+                          data-index={1}
+                          defaultValue="c1bj0fqib1"
+                          defaultChecked="false"
+                        />
+                        <div className="nav-item-wrapper" bis_skin_checked={1}>
+                          <Link
+                            to="/Read-to-Lead-Campaign-Sokoto-registration-system"
+                            className="nav-item-link"
+                            tabIndex={0}
+                            role="menuitem"
+                          >
+                            Read To Lead Campaign Sokoto Registration
+                          </Link>
+
+                        </div>
+
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </li>
+                      <hr style={{ margin: "0px" }} />
+
+              {/* start */}
+              <li className={`nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1759 nav-parent ${open4 ? 'level-open' : ''} `}>
+                <input
+                  type="checkbox"
+                  id="hc-nav-1-1-1"
+                  className="hc-chk"
+                  tabIndex={-1}
+                  data-level={1}
+                  data-index={1}
+                  defaultValue="j4xx2uyw6c"
+                  defaultChecked="false"
+                />
+                <div className="nav-item-wrapper" bis_skin_checked={1}>
+                  <Link
+                    to="#"
                     className="nav-item-link"
                     tabIndex={0}
                     role="menuitem"
                   >
                     News
                   </Link>
-                  {/* <a
+                  <a
                     href="#"
                     className="nav-next"
-                    aria-label="Submenu: News"
+                    aria-label="Submenu: Our Work"
                     role="menuitem"
                     tabIndex={0}
-                    aria-controls="menu-bq0357zed66"
+                    aria-controls="menu-j4xx2uyw6c"
                     aria-haspopup="true"
                     aria-expanded="false"
+                    onClick={() => setOpen4(!open4)}
+
                   >
                     <span />
-                  </a> */}
+                  </a>
                 </div>
+                <div
+                  className="nav-wrapper nav-wrapper-1"
+                  data-level={1}
+                  data-index={1}
+                  bis_skin_checked={1}
+                >
+                  <div className="nav-content" bis_skin_checked={1}>
+                    <h2 className="level-title">News</h2>
+                    <div className="nav-back" bis_skin_checked={1}>
+                      <div className="nav-item-wrapper" bis_skin_checked={1}>
+                        <a
+                          href="#"
+                          className="nav-back-button"
+                          role="menuitem"
+                          tabIndex={0}
+                          onClick={() => setOpen4(!open4)}
 
+                        >
+                          Back
+                          <span />
+                        </a>
+                      </div>
+                    </div>
+                    <ul
+                      id="menu-j4xx2uyw6c"
+                      role="menu"
+                      aria-level={2}
+                      className="sub-menu"
+                    >
+
+                      <li className="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-916 nav-parent">
+                        <input
+                          type="checkbox"
+                          id="hc-nav-1-2-0"
+                          className="hc-chk"
+                          tabIndex={-1}
+                          data-level={2}
+                          data-index={0}
+                          defaultValue="sc58kjqoakm"
+                          defaultChecked="false"
+                        />
+                        <div className="nav-item-wrapper" bis_skin_checked={1}>
+                          <Link
+                            to="/news"
+                            className="nav-item-link"
+                            tabIndex={0}
+                            role="menuitem"
+                          >
+                            News
+                          </Link>
+
+                        </div>
+
+                      </li>
+                      <hr style={{ margin: "0px" }} />
+
+                      <li className="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1744 nav-parent">
+                        <input
+                          type="checkbox"
+                          id="hc-nav-1-2-1"
+                          className="hc-chk"
+                          tabIndex={-1}
+                          data-level={2}
+                          data-index={1}
+                          defaultValue="c1bj0fqib1"
+                          defaultChecked="false"
+                        />
+                        <div className="nav-item-wrapper" bis_skin_checked={1}>
+                          <Link
+                            to="/news/media"
+                            className="nav-item-link"
+                            tabIndex={0}
+                            role="menuitem"
+                          >
+                            Media
+                          </Link>
+
+                        </div>
+
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
               </li>
+                      <hr style={{ margin: "0px" }} />
+
+              {/* end */}
               <li className="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-913 nav-parent">
                 <input
                   type="checkbox"
@@ -366,6 +591,8 @@ const MobileNav = ({ setShowNav }) => {
                 </div>
 
               </li>
+                      <hr style={{ margin: "0px" }} />
+
               <li className="nav-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-913 nav-parent">
                 <input
                   type="checkbox"

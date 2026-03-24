@@ -41,10 +41,8 @@ const Mission = () => {
                   <strong />
                 </p>
                 <p>
-                  Our mission is to empower children and communities by providing access to quality education through innovative programs.
-                  We are committed to fostering literacy and numeracy, promoting digital learning, and creating opportunities for skills
-                  development in underserved areas. Through our read to lead campaigns, smart learning hubs, and educational outreach,
-                  we aim to equip young learners with the tools they need to thrive in a rapidly changing world.
+                Our mission is to empower children and communities through quality,
+                 innovative education that promotes literacy, digital learning, and skills development, especially in underserved areas.
                 </p>
                 <br />
                 <Link

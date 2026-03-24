@@ -30,9 +30,11 @@ import ContactUs from './pages/contact-us/ContactUs';
 import SokotoLearns from './pages/sokoto-learns/SokotoLearns';
 import SmartLearningHub from './pages/smart-learning-hub/SmartLearningHub';
 import ReadToLead from './pages/read-to-lead/ReadToLead';
+import ReadToLeadRegistration from './pages/sokoto-learns-registration-form/ReadToLeadRegistration';
 import CapacityBuildingForTeachers from './pages/capacity-building-for-teachers/CapacityBuildingForTeachers';
+import SokotoLearnsRegistration from './pages/sokoto-learns-registration/SokotoLearnsRegistration';
 
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
@@ -48,6 +50,9 @@ function App() {
    <Route path="/founder-message" element={<Message />} />
    <Route path="/capacity-building-for-teachers" element={<CapacityBuildingForTeachers />} />
    <Route path="/Literacy-and-Numeracy-Recovery-Program-in-Sokoto-State" element={<SokotoLearns />} />
+   <Route path="/Read-to-Lead-Campaign-Sokoto-registration-system" element={<SokotoLearnsRegistration />} />
+   <Route path="/read-to-lead-campaign/register" element={<ReadToLeadRegistration />} />
+
    <Route path="/smart-learning-hub" element={<SmartLearningHub />} />
    <Route path="/read-to-lead-campaign" element={<ReadToLead />} />
 

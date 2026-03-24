@@ -273,7 +273,7 @@ select {
   --section-spacing: 20px;
   --step-count-position: -35px auto 17px;
   --item-cta-padding: 40px;
-  --menu-item-arrow-spacing: 24px;
+  --menu-item-arrow-spacing: 20px;
   --primary-nav-padding: 18px 0;
   --button-padding: 8px 20px;
   --button-amount-padding: 8px 0;
@@ -1018,42 +1018,6 @@ a.cta-button:hover {
   transform: scale(1.05);
   will-change: transform;
 }
-.cta-button.animated:before,
-a.cta-button.animated:before {
-  position: absolute;
-  content: "";
-  left: -2em;
-  right: -2em;
-  top: -2em;
-  bottom: -2em;
-  pointer-events: none;
-  transition: ease-in-out 0.5s;
-  background-repeat: no-repeat;
-  /* background-image: url(../../../../../../../../themes/sage/dist/images/heart.svg),
-    url(../../../../../../../../themes/sage/dist/images/heart.svg),
-    url(../../../../../../../../themes/sage/dist/images/heart.svg),
-    url(../../../../../../../../themes/sage/dist/images/heart.svg),
-    url(../../../../../../../../themes/sage/dist/images/heart.svg),
-    url(../../../../../../../../themes/sage/dist/images/heart.svg),
-    url(../../../../../../../../themes/sage/dist/images/heart.svg),
-    url(../../../../../../../../themes/sage/dist/images/heart.svg),
-    url(../../../../../../../../themes/sage/dist/images/heart.svg),
-    url(../../../../../../../../themes/sage/dist/images/heart.svg); */
-  background-size: 15% 15%, 10% 10%, 15% 15%, 10% 10%, 15% 15%, 18% 18%, 10% 10%,
-    10% 10%, 15% 15%, 15% 15%;
-  background-position: 18% 40%, 35% 30%, 50% 30%, 65% 30%, 83% 38%, 23% 68%,
-    28% 67%, 51% 70%, 59% 70%, 75% 68%;
-  animation: hearts_sparkle ease-in-out 0.5s forwards;
-}
-.cta-button.animated:active:before,
-a.cta-button.animated:active:before {
-  animation: none;
-  background-size: 0;
-}
-.cta-button:not(:hover):before,
-a.cta-button:not(:hover):before {
-  visibility: hidden;
-}
 .cta-button-medium,
 a.cta-button-medium {
   font-size: var(--button-medium-font-size);
@@ -1152,33 +1116,22 @@ a.cta-button-donate {
 @media (min-width: 1130px) {
   .cta-button-donate,
   a.cta-button-donate {
-    margin-left: 40px;
+    margin-left: 20px;
   }
 }
 @media (min-width: 1366px) {
   .cta-button-donate,
   a.cta-button-donate {
-    margin-left: 50px;
+    margin-left: 20px;
   }
 }
 @media (min-width: 1920px) {
   .cta-button-donate,
   a.cta-button-donate {
-    margin-left: 14%;
+    margin-left: 10%;
   }
 }
-.cta-button-donate.animated:before,
-a.cta-button-donate.animated:before {
-  /* background-image: url(../../../../../../../../themes/sage/dist/images/heart.svg),
-    url(../../../../../../../../themes/sage/dist/images/heart.svg),
-    url(../../../../../../../../themes/sage/dist/images/heart.svg),
-    url(../../../../../../../../themes/sage/dist/images/heart.svg),
-    url(../../../../../../../../themes/sage/dist/images/heart.svg),
-    url(../../../../../../../../themes/sage/dist/images/heart.svg); */
-  background-size: 15% 15%, 10% 10%, 15% 15%, 10% 10%, 15% 15%, 15% 15%;
-  background-position: 70% 30%, 75% 30%, 83% 38%, 65% 60%, 75% 70%, 84% 68%;
-  animation: hearts_sparkle_donate ease-in-out 0.75s forwards;
-}
+
 .cta-button-donate:focus .icon_heart,
 .cta-button-donate.animate_on_hover:hover:focus .icon_heart {
   animation-play-state: paused;
@@ -2856,7 +2809,7 @@ body.reading-line #reading-line {
 @media (min-width: 1024px) {
   .nav-primary {
     display: flex;
-    margin-left: auto;
+    margin: auto;
   }
 }
 .nav-primary .nav {
@@ -2999,7 +2952,7 @@ body.reading-line #reading-line {
 .nav-primary .nav > .menu-item-has-children {
   position: relative;
 }
-.nav-primary .nav > .menu-item-has-children > a > span:after {
+/* .nav-primary .nav > .menu-item-has-children > a > span:after {
   content: "\F007";
   font: normal normal normal 14px/1.0 Light;
   position: absolute;
@@ -3009,7 +2962,7 @@ body.reading-line #reading-line {
   display: block;
   transform: translateY(-50%);
   margin-top: -2px;
-}
+} */
 .nav-primary .nav > .menu-item-has-children.open > a > span:after {
   transform: rotate(180deg);
   margin-top: -4px;
@@ -3018,6 +2971,7 @@ body.reading-line #reading-line {
   opacity: 1;
   visibility: visible;
   transition: var(--hover-transition) opacity;
+  /* width: 100%; */
 }
 .nav-primary .nav > .menu-item-has-children.outside-viewport-right {
   position: static;
@@ -4718,7 +4672,7 @@ body.hc-nav-open {
   --section-spacing: 20px;
   --step-count-position: -35px auto 17px;
   --item-cta-padding: 40px;
-  --menu-item-arrow-spacing: 24px;
+  --menu-item-arrow-spacing: 20px;
   --primary-nav-padding: 18px 0;
   --button-padding: 8px 20px;
   --button-amount-padding: 8px 0;
