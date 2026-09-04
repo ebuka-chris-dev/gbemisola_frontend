@@ -1,70 +1,206 @@
-# Getting Started with Create React App
+# Gbemisola Foundation — Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Frontend web application for the **Gbemisola Foundation**, built with React. The application provides the public-facing website for the foundation and connects to a Node.js/Express backend API for dynamic content, registrations, and other services.
 
-## Available Scripts
+## 🌐 Project
 
-In the project directory, you can run:
+* **Live Website:** https://gbemisolafoundation.org/
+* **Backend API:** https://gbemisola-backend.onrender.com
+* **Backend Repository:** https://github.com/ebuka-chris-dev/gbemisola_backend
 
-### `npm start`
+## 🚀 What I Built
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I developed the React frontend for the Gbemisola Foundation website, implementing the site's pages, reusable components, API integration, responsive layouts, and user interactions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The application includes sections for:
 
-### `npm test`
+* Foundation information
+* About the organization
+* Our work and programs
+* Capacity building for teachers
+* Read to Lead program
+* Smart Learning Hub
+* Sokoto Learn
+* News and media
+* Donations
+* Partnerships
+* Contact and communication
+* Work with us
+* Registration forms
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📚 Programs & Organization
 
-### `npm run build`
+The frontend presents information about the foundation's programs and initiatives through dedicated pages and reusable components.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Some of the implemented sections include:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* **Our Work**
+* **Capacity Building for Teachers**
+* **Read to Lead**
+* **Smart Learning Hub**
+* **Sokoto Learn**
+* **Partnership**
+* **Organization**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+These sections allow visitors to learn about the foundation and its educational initiatives.
 
-### `npm run eject`
+## 📝 Sokoto Learn Registration
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+I implemented the frontend registration flow for the **Sokoto Learn** program.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The frontend provides registration interfaces that collect information required by the backend, including details related to:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Competition
+* Zone
+* School type
+* Education level
+* Participant registration
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The registration forms communicate with the backend API using Axios.
 
-## Learn More
+## 📰 News & Media
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The website includes dedicated interfaces for displaying foundation news and media content.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Implemented functionality includes:
 
-### Code Splitting
+* News listing
+* Individual news views
+* Media section
+* Dynamic content retrieved from the backend API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 💰 Donations
 
-### Analyzing the Bundle Size
+The frontend includes dedicated donation pages and interfaces that provide visitors with information about supporting the foundation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📞 Contact & Communication
 
-### Making a Progressive Web App
+I implemented frontend pages and forms for communication-related sections of the website, including:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* Contact
+* Messages
+* Partnership
+* Work with us
 
-### Advanced Configuration
+API requests are handled through Axios where backend interaction is required.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🛠️ Technology Stack
 
-### Deployment
+* **React 19**
+* **JavaScript**
+* **React Router**
+* **Axios**
+* **Bootstrap**
+* **Reactstrap**
+* **React Toastify**
+* **Swiper**
+* **Font Awesome**
+* **CSS**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🏗️ Project Structure
 
-### `npm run build` fails to minify
+```text
+src/
+├── assets/
+│
+├── components/
+│   ├── about-us/
+│   ├── contact-us/
+│   ├── donation/
+│   ├── home/
+│   ├── media/
+│   ├── news/
+│   ├── organisation/
+│   ├── partnership/
+│   ├── shared/
+│   ├── view-news/
+│   └── work-with-us/
+│
+├── pages/
+│   ├── about-us/
+│   ├── capacity-building-for-teachers/
+│   ├── contact-us/
+│   ├── donation/
+│   ├── home/
+│   ├── media/
+│   ├── news/
+│   ├── organisation/
+│   ├── our-work/
+│   ├── partnership/
+│   ├── read-to-lead/
+│   ├── smart-learning-hub/
+│   ├── sokoto-learns/
+│   ├── sokoto-learns-registration/
+│   ├── view-news/
+│   └── work-with-us/
+│
+├── store/
+├── App.js
+└── index.js
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The application separates pages and reusable UI components to keep the frontend organized and maintainable.
+
+## 🔌 Backend Integration
+
+The frontend communicates with the Gbemisola Foundation backend through REST API requests.
+
+**Backend API:**
+
+```text
+https://gbemisola-backend.onrender.com
+```
+
+Axios is used to make API requests and handle communication between the React application and backend services.
+
+## 📱 Responsive Interface
+
+The application was developed to provide a responsive experience across different screen sizes.
+
+Bootstrap and Reactstrap are used alongside custom styling to build and structure the user interface.
+
+Swiper is also used for interactive content and presentation sections where applicable.
+
+## 💻 Running Locally
+
+### Clone the repository
+
+```bash
+git clone https://github.com/ebuka-chris-dev/gbemisola_frontend.git
+
+cd gbemisola_frontend
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start the development server
+
+```bash
+npm start
+```
+
+The application will be available through the local development server.
+
+### Create a production build
+
+```bash
+npm run build
+```
+
+## 🔗 Related Project
+
+This frontend is part of the Gbemisola Foundation web platform and works together with the Node.js backend API.
+
+**Backend Repository:**
+
+https://github.com/ebuka-chris-dev/gbemisola_backend
+
+## 👨‍💻 Developer
+
+**Ebuka Christian Ugwu**
+
+Full-Stack JavaScript Developer
